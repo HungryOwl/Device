@@ -1,10 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <link href="./css/style.css" rel="stylesheet">
   <title>Device</title>
 </head>
 <body>
+  <header class="page-header">
+    <a class="logo" href="#">Device</a>
+    <input class="search-field" type="search" name="search" id="search" autofocus>
+    <section class="user-menu user-menu--header">
+      <a href="#" class="user-menu__login user-menu__login--header">Войти</a>
+      <a href="#" class="user-menu__compare">Сравнить</a>
+      <a href="#" class="user-menu__basket">Корзина</a>
+    </section>
+    <section class="main-nav main-nav--index">
+      <ul class="main-nav__items">
+        <li class="main-nav__menu-item"><a class="main-nav__menu-link main-nav__link--catalog" href="#">Каталог товаров</a>
+          <ul class="main-nav__catalog">
+            <li class="main-nav__catalog-item"><a href="#" class="main-nav__catalog-link">Виртуальная реальность</a></li>
+            <li class="main-nav__catalog-item"><a href="#" class="main-nav__catalog-link">Моноподы для селфи</a></li>
+            <li class="main-nav__catalog-item"><a href="#" class="main-nav__catalog-link">Экшн-камеры</a></li>
+            <li class="main-nav__catalog-item"><a href="#" class="main-nav__catalog-link">Фитнесс-браслеты</a></li>
+            <li class="main-nav__catalog-item"><a href="#" class="main-nav__catalog-link">Умные часы</a></li>
+            <li class="main-nav__catalog-item"><a href="#" class="main-nav__catalog-link">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li class="main-nav__menu-item"><a class="conditions-link main-nav__menu-link" href="#">Доставка</a></li>
+        <li class="main-nav__menu-item"><a class="conditions-link main-nav__menu-link" href="#">Гарантия</a></li>
+        <li class="main-nav__menu-item"><a class="conditions-link main-nav__menu-link" href="#">Контакты</a></li>
+      </ul>
+    </section>
+  </header>
 
+  <main class="page-main">
+    <section class="product-promo">
+      <input class="product-promo__switcher" type="radio" name="product-1" id="product-1" checked>
+      <input class="product-promo__switcher" type="radio" name="product-2" id="product-2">
+      <input class="product-promo__switcher" type="radio" name="product-3" id="product-3">
+
+      <article class="product-promo__item">
+        <img class="product-promo__image" src="" alt="Монопод для селфи">
+        <div class="product-promo__content">
+          <h2 class="product-promo__title">Делай селфи,<br> как Бен Стиллер!</h2>
+          <p class="product-promo__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <a class="btn btn--product-promo" href="#">Подробнее</a>
+          <div class="product-promo__value">8,5 м.
+            <span class="product-promo__property">Длина палки</span>
+          </div>
+          <div class="product-promo__value">5 кг.
+            <span class="product-promo__property">Вес палки</span>
+          </div>
+          <div class="product-promo__value">Карбон
+            <span class="product-promo__property">Материал</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="product-promo__item">
+        <img class="product-promo__image" src="" alt="Монопод для селфи">
+        <div class="product-promo__content">
+          <h2 class="product-promo__title">Худеем <br>правильно!</h2>
+          <p class="product-promo__description">Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a class="btn btn--product-promo" href="#">Подробнее</a>
+          <div class="product-promo__value">48 часов
+            <span class="product-promo__property">Без подзарядки</span>
+          </div>
+          <div class="product-promo__value">5 кг.
+            <span class="product-promo__property">Вес палки</span>
+          </div>
+          <div class="product-promo__value">Карбон
+            <span class="product-promo__property">Материал</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-promo__item">
+        <img class="product-promo__image" src="" alt="Монопод для селфи">
+        <div class="product-promo__content">
+          <h2 class="product-promo__title">Порхает как бабочка, жалит как пчела!</h2>
+          <p class="product-promo__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <a class="btn btn--product-promo" href="#">Подробнее</a>
+          <div class="product-promo__value">800 м.
+            <span class="product-promo__property">Дальность полета</span>
+          </div>
+          <div class="product-promo__value">50 м.
+            <span class="product-promo__property">Радиус поражения</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="slider-items product-promo__nav">
+        <label class="slider-items__btn" for="product-1">1</label>
+        <label class="slider-items__btn" for="product-2">2</label>
+        <label class="slider-items__btn" for="product-3">3</label>
+      </div>
+    </section>
+
+    <article class="product-popular">
+      <article class="product-popular__item">
+        <figure class="product-popular__container">
+          <img class="product-popular__image" src="#" alt="Вирткальная реальность">
+        </figure>
+        <h4>Виртуальная реальность</h4>
+      </article>
+
+      <article class="product-popular__item">
+        <figure class="product-popular__container">
+          <img class="product-popular__image" src="#" alt="Вирткальная реальность">
+        </figure>
+        <h4>Моноподы для селфи</h4>
+      </article>
+
+      <article class="product-popular__item">
+        <figure class="product-popular__container">
+          <img class="product-popular__image" src="#" alt="Вирткальная реальность">
+        </figure>
+        <h4>Экшн-камеры</h4>
+      </article>
+
+      <article class="product-popular__item">
+        <figure class="product-popular__container">
+          <img class="product-popular__image" src="#" alt="Вирткальная реальность">
+        </figure>
+        <h4>Фитнесс браслеты</h4>
+      </article>
+
+      <article class="product-popular__item">
+        <figure class="product-popular__container">
+          <img class="product-popular__image" src="#" alt="Вирткальная реальность">
+        </figure>
+        <h4>Умные часы</h4>
+      </article>
+
+      <article class="product-popular__item">
+        <figure class="product-popular__container">
+          <img class="product-popular__image" src="#" alt="Вирткальная реальность">
+        </figure>
+        <h4>Квадрокоптеры</h4>
+      </article>
+    </article>
+
+    <section class="conditions">
+      <div class="conditions__wrapper">
+        <input class="conditions__switcher" type="radio" name="delivery" id="delivery">
+        <input class="conditions__switcher" type="radio" name="guarantee" id="guarantee">
+        <input class="conditions__switcher" type="radio" name="credit" id="credit">
+
+        <label for="delivery" class="conditions__btn">Доставка</label>
+        <label for="guarantee" class="conditions__btn">Гарантия</label>
+        <label for="credit" class="conditions__btn">Кредит</label>
+
+        <div class="conditions__info conditions__info--delivery">
+          <h3 class="conditions__title">Доставка</h3>
+          <p class="conditions__content">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
+
+        <div class="conditions__info conditions__info--warranty">
+          <h3 class="conditions__title">Гарантия</h3>
+          <p class="conditions__content">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+        </div>
+
+        <div class="conditions__info conditions__info--warranty">
+          <h3 class="conditions__title">Кредит</h3>
+          <p class="conditions__content">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="suppliers">
+      <a href="#" class="suppliers__dji">DJI</a>
+      <a href="#" class="suppliers__spgadjets">SpGadjets</a>
+      <a href="#" class="suppliers__gopro">GoPro</a>
+      <a href="#" class="suppliers__vive">Vive</a>
+    </section>
+
+    <section class="device-info">
+      <section class="device-info__about-us">
+        <h3 class="device-info__title">О нас</h3>
+        <p class="device-info__content">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="device-info__content">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <a class="btn" href="#">Подробнее о нас</a>
+      </section>
+
+      <section class="device-info__contacts">
+        <h3 class="device-info__title">Контакты</h3>
+        <p class="device-info__content">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <div class="map">Улица Строителей, дом 15</div>
+        <a class="btn" href="#">Напишите нам</a>
+      </section>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="logo" href="#">Device</a>
+      <section class="user-menu user-menu--header">
+        <a href="#" class="user-menu__login user-menu__login--footer">Войти</a>
+        <a href="#" class="user-menu__compare">Сравнить</a>
+        <a href="#" class="user-menu__basket">Корзина</a>
+      </section>
+
+      <p class="contacts">г. Москва, ул. Строителей, 15</p>
+      <section class="conditions-links">
+        <a class="conditions-link page-footer__link" href="#">Доставка</a>
+        <a class="conditions-link page-footer__link" href="#">Гарантия</a>
+        <a class="conditions-link page-footer__link" href="#">Контакты</a>
+      </section>
+      <p class="phone">Тел.: +7 (495) 495-95-95</p>
+
+      <section class="social">
+        <a class="social-link" href="#">Facebook</a>
+        <a class="social-link" href="#">Instagram</a>
+        <a class="social-link" href="#">Twitter</a>
+      </section>
+
+      <section class="copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+      </section>
+    </div>
+  </footer>
 </body>
 </html>
