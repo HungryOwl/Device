@@ -19,7 +19,8 @@
     "gulp": "3.9.1",
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.1.0",
-    "gulp-sass": "2.2.0"
+    "gulp-sass": "2.2.0",
+    "node-normalize-scss": "^1.4.0"
   },
   "scripts": {
     "test": "editorconfig-tools check *",
