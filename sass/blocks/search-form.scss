@@ -16,6 +16,21 @@
     padding-right: 20px;
 
     border: 2px solid $primary-color;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition-property: opacity;
+    transition: 0.2s ease all;
+  }
+
+  &__submit:hover {
+    color: $white;
+    background-color: $primary-color;
+  }
+
+  &__submit:active {
+    color: $primary-color-30;
   }
 
   &__border {
@@ -38,13 +53,24 @@
     right: 0;
     top: -2px;
 
-    transition-property: left;
-    transition-duration: 0.2s;
-
     background-color: $primary-color;
+    opacity: 0;
+
+    transition-property: left, opacity;
+    transition-duration: 0.2s;
   }
 }
 
-.search:focus ~ .search-form__border::after {
+.search:focus ~ .search-form__border::after,
+.search ~ .search-form__submit:active ~ .search-form__border::after {
   left: 0;
+  opacity: 1;
 }
+
+.search:focus ~ .search-form__submit,
+.search ~ .search-form__submit:active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
