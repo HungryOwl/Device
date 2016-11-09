@@ -5,3 +5,8 @@
     clear: both;
   }
 }
+
+@mixin container {
+  width: $main-width;
+  margin: 0 auto;
+}
