@@ -10,3 +10,20 @@
   width: $main-width;
   margin: 0 auto;
 }
+
+@mixin form-style-reset {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: "Open Sans", "Arial","Helvetica", "Garuda", sans-serif;
+
+  color: $text-primary;
+
+  border: none;
+  outline: none;
+
+  background-color: $secondary-color;
+}
+
+@mixin lineout {
+  outline: 1px #999;
+}

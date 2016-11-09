@@ -1,0 +1,15 @@
+.search {
+  @include form-style-reset;
+  width: 432px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 20px;
+
+  background-color: $secondary-color;
+
+  /* &:focus {
+    border-bottom: 2px solid $primary-color;
+  } */
+}

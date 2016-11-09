@@ -1,0 +1,50 @@
+.search-form {
+  @include lineout;
+  float: left;
+
+  width: 520px;
+
+  font-size: 0;
+
+  &__submit {
+    @include form-style-reset;
+    line-height: 36px;
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border: 2px solid $primary-color;
+  }
+
+  &__border {
+    display: block;
+    position: relative;
+
+    width: 432px;
+    height: 0;
+
+    transition: 0.2s ease all;
+  }
+
+  &__border::after {
+    position: absolute;
+    content: "";
+
+    height: 2px;
+
+    left: 100%;
+    right: 0;
+    top: -2px;
+
+    transition-property: left;
+    transition-duration: 0.2s;
+
+    background-color: $primary-color;
+  }
+}
+
+.search:focus ~ .search-form__border::after {
+  left: 0;
+}
