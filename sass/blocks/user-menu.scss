@@ -1,3 +1,23 @@
 .user-menu {
   float: right;
+  padding-top: 15px;
+
+  &__item {
+    @include link-reset;
+
+    padding-left: 27px;
+
+    line-height: 36px;
+
+    transition-property: color;
+    transition: 0.2s ease all;
+  }
+
+  &__item:hover {
+    color: $text-primary-60;
+  }
+
+  &__item:active {
+    color: $text-primary-30;
+  }
 }

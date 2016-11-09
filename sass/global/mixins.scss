@@ -12,6 +12,15 @@
   margin: 0 auto;
 }
 
+@mixin link-reset {
+  font-size: $font-size;
+  line-height: $line-height;
+
+  color: $text-primary;
+
+  text-decoration: none;
+}
+
 @mixin form-style-reset {
   font-size: $font-size;
   line-height: $line-height;

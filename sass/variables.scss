@@ -1,8 +1,14 @@
 // color
 $black: #000;
+$black-60: rgba($black, 0.6);
+$black-30: rgba($black, 0.3);
+
 $white: #fff;
+$white-30: rgba($white, 0.3);
+
 $light-skin-1: #f7e296;
 $light-skin-2: #f7e184;
+
 $orange: #f0c52e;
 
 // width
@@ -10,9 +16,14 @@ $main-width: 1160px;
 
 // global
 $primary-color: $black;
-$primary-color-30: rgba($white, 0.3);
+$primary-color-60: rgba($black, 0.6);
+$primary-color-30: rgba($black, 0.3);
+
 $secondary-color: $light-skin-1;
 $secondary-color-light: $light-skin-2;
+
+$third-color: $white;
+$third-color-30: $white-30;
 
 $bg-main: $white;
 
@@ -23,4 +34,10 @@ $line-height: 30px;
 
 // text color
 $text-primary: $primary-color;
+$text-primary-60: $primary-color-60;
+$text-primary-30: $primary-color-30;
+
 $text-secondary: $secondary-color-light;
+
+$text-third: $third-color;
+$text-third-30: $third-color-30;

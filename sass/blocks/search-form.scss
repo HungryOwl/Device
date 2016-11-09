@@ -25,12 +25,14 @@
   }
 
   &__submit:hover {
+    cursor: pointer;
+
     color: $white;
     background-color: $primary-color;
   }
 
   &__submit:active {
-    color: $primary-color-30;
+    color: $text-third-30;
   }
 
   &__border {
