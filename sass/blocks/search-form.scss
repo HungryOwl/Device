@@ -1,5 +1,4 @@
 .search-form {
-  @include lineout;
   float: left;
 
   width: 520px;
@@ -35,7 +34,7 @@
     color: $text-third-30;
   }
 
-  &__border {
+  &__decor {
     display: block;
     position: relative;
 
@@ -45,7 +44,22 @@
     transition: 0.2s ease all;
   }
 
-  &__border::after {
+  &__decor::before {
+    position: absolute;
+    content: "";
+  }
+
+  &__decor--icon-search::before {
+    width: 16px;
+    height: 16px;
+
+    top: -35px;
+    left: 4px;
+
+    background-image: url("../img/icons/icon-search.svg");
+  }
+
+  &__decor::after {
     position: absolute;
     content: "";
 
@@ -63,8 +77,8 @@
   }
 }
 
-.search:focus ~ .search-form__border::after,
-.search ~ .search-form__submit:active ~ .search-form__border::after {
+.search:focus ~ .search-form__decor::after,
+.search ~ .search-form__submit:active ~ .search-form__decorer::after {
   left: 0;
   opacity: 1;
 }

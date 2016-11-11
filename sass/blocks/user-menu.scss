@@ -13,6 +13,10 @@
     transition: 0.2s ease all;
   }
 
+  &__item--logout {
+     padding-left: 20px;
+  }
+
   &__item:hover {
     color: $text-primary-60;
   }

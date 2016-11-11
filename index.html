@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link href="./css/style.css" rel="stylesheet">
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
     <title>Device</title>
   </head>
   <body>
@@ -10,9 +12,14 @@
       <a class="logo" href="#">Device</a>
 
       <form class="search-form" action="/echo" method="get">
+        <!-- <span>
+          <svg width="28" height="35">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-search"></use>
+          </svg>
+        </span> -->
         <input class="search-form__search search" type="search" placeholder="Поиск по сайту" name="search" id="search" autofocus>
         <input class="search-form__submit" type="submit" value="Найти" name="submit" id="find">
-        <label class="search-form__border"></label>
+        <label class="search-form__decor search-form__decor--icon-search"></label>
       </form>
 
       <section class="user-menu user-menu--header">
