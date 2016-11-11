@@ -1,17 +1,32 @@
 .user-menu {
   float: right;
+  width: 500px;
 
   padding-top: 15px;
+
+  *:last-child {
+    padding-right: 0;
+  }
 
   &__item {
     @include link-reset;
     position: relative;
 
     padding-left: 27px;
+    padding-right: 37px;
     line-height: 36px;
 
     transition-property: color;
     transition: 0.2s ease all;
+  }
+
+  &__item--login-header {
+    margin-right: 170px;
+  }
+
+  &__item--name,
+  &__item--logout {
+    display: none;
   }
 
   &__item--logout {
@@ -25,4 +40,18 @@
   &__item:active {
     color: $text-primary-30;
   }
+
+  &__icon {
+    transition-property: fill;
+    transition: 0.2s ease all;
+  }
 }
+
+.user-menu__item:hover .user-menu__icon {
+  fill: $primary-color-60;
+}
+
+.user-menu__item:active .user-menu__icon {
+  fill: $primary-color-30;
+}
+

@@ -3,8 +3,18 @@
   left: 0;
   bottom: 0;
 
-  &--user,
-  &--cart {
+  &--user {
+    left: -2px;
     bottom: 3px;
   }
+
+  &--compare {
+    left: 7px;
+    bottom: 3px;
+  }
+
+  &--cart {
+    bottom: 2px;
+  }
 }
+
