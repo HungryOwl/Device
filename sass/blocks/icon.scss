@@ -1,0 +1,10 @@
+.icon {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  &--user,
+  &--cart {
+    bottom: 3px;
+  }
+}

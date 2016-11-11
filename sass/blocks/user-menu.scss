@@ -1,12 +1,13 @@
 .user-menu {
   float: right;
+
   padding-top: 15px;
 
   &__item {
     @include link-reset;
+    position: relative;
 
     padding-left: 27px;
-
     line-height: 36px;
 
     transition-property: color;

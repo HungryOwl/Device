@@ -7,7 +7,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync");
 var svgstore = require("gulp-svgstore");
-var svgmin = require("gulp-svgmin");
+//var svgmin = require("gulp-svgmin");
 var rename = require("gulp-rename");
 
 gulp.task("style", function() {
@@ -31,7 +31,7 @@ gulp.task("style", function() {
 
 gulp.task("symbols", function() {
   return gulp.src("img/icons/*.svg")
-  .pipe(svgmin())
+  //.pipe(svgmin())
   .pipe(svgstore({
     inlineSvg: true
   }))
