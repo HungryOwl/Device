@@ -52,6 +52,9 @@
 
   text-transform: uppercase;
 
+  transition-property: color;
+  transition: 0.2s ease all;
+
   &--catalog {
     padding-right: 32px;
     position: relative;
@@ -63,10 +66,13 @@
       width: 2px;
       height: 16px;
 
-      background-color: $fourth-color;
+      background-color: $primary-color-30;
 
       top: 3px;
       right: 10px;
+
+      transition-property: background-color;
+      transition: 0.2s ease all;
     }
 
     &::after {
@@ -76,10 +82,55 @@
       width: 16px;
       height: 2px;
 
-      background-color: $fourth-color;
+      background-color: $primary-color-30;
 
       top: 10px;
       right: 3px;
+
+      transition-property: background-color;
+      transition: 0.1s ease all;
+    }
+
+    &:hover::before {
+      background-color: $primary-color-20;
+    }
+
+    &:hover::after {
+      background-color: $primary-color-20;
+    }
+
+    &:active::before {
+      background-color: $primary-color-10;
+    }
+
+    &:active::after {
+      background-color: $primary-color-10;
+    }
+  }
+
+  &:hover {
+    color: $primary-color-60;
+  }
+
+   &:active {
+    color: $primary-color-30;
+  }
+
+  &--delivery {
+    position: relative;
+
+    &::before {
+      position: absolute;
+
+      content: "";
+
+      height: 7px;
+
+      top: 110px;
+      left: 18px;
+      right: 42px;
+
+      background-color: $bg-main;
     }
   }
 }
