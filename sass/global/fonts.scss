@@ -1,27 +1,15 @@
-@font-face {
-  font-family: "Open Sans";
-    src: url("../fonts/opensans.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
+@mixin font-face($family, $path, $weight) {
+  @font-face {
+    font-family: $family;
+    font-weight: $weight;
+
+    src: url('#{$path}.woff') format('woff'),
+    url('#{$path}.woff2') format('woff2');
+  }
 }
 
-@font-face {
-  font-family: "Open Sans";
-    src: url("../fonts/opensanslight.woff") format('woff');
-  font-weight: lighter;
-  font-style: normal;
-}
+@include font-face('opensans', '../fonts/opensanslight', 300);
+@include font-face('opensans', '../fonts/opensans', 400);
 
-@font-face {
-  font-family: "Open Sans";
-    src: url("../fonts/gilroyextrabold.woff") format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
-    src: url("../fonts/gilroylight.woff") format('woff');
-  font-weight: lighter;
-  font-style: normal;
-}
+@include font-face('gilroy', '../fonts/gilroylight', 300);
+@include font-face('gilroy', '../fonts/gilroyextrabold', 800);

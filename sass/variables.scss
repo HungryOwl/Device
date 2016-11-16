@@ -11,6 +11,8 @@ $light-skin-2: #f7e184;
 
 $orange: #f0c52e;
 
+$grey-orange: #b8a974;
+
 // width
 $main-width: 1160px;
 
@@ -25,12 +27,15 @@ $secondary-color-light: $light-skin-2;
 $third-color: $white;
 $third-color-30: $white-30;
 
+$fourth-color: $grey-orange;
+
 $bg-main: $white;
 
 // font
 $font: opensans, Arial, sans-serif;
 $font-size: 15px;
 $line-height: 30px;
+$letter-space: 3.5px;
 
 // text color
 $text-primary: $primary-color;
