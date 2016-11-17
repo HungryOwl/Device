@@ -1,7 +1,7 @@
 .main-nav {
   clear: both;
 
-  padding-top: 24px;
+  padding-top: 28px;
 }
 
 .main-nav__items,
@@ -15,21 +15,32 @@
 
 .main-nav__items {
   @include clearfix;
+
+  font-size: 0;
 }
 
-.main-nav__menu-item:first-child * {
+.main-nav__menu-item:first-child > * {
   padding-left: 0;
 }
 
-.main-nav__menu-item:last-child * {
+.main-nav__menu-item:last-child > * {
   padding-right: 0;
 }
 
 .main-nav__menu-item {
   float: left;
+  position: relative;
 
-  &:last-child {
+  &--right-side {
     float: right;
+  }
+
+  &--right-side .main-nav__menu-link {
+    padding-right: 0;
+  }
+
+  &--left-side .main-nav__menu-link {
+    padding-left: 0px;
   }
 
   &--catalog-margin {
@@ -39,6 +50,8 @@
 
 .main-nav__menu-link {
   @include link-reset;
+
+  display: block;
 
   padding-left: 18px;
   padding-right: 18px;
@@ -88,7 +101,7 @@
       right: 3px;
 
       transition-property: background-color;
-      transition: 0.1s ease all;
+      transition: 0.2s ease all;
     }
 
     &:hover::before {
@@ -116,7 +129,7 @@
     color: $primary-color-30;
   }
 
-  &--delivery {
+  &--decor {
     position: relative;
 
     &::before {
@@ -135,7 +148,60 @@
   }
 }
 
-
 .main-nav__catalog {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+  z-index: 100;
+
+  width: 1040px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: $secondary-color;
+
+  transition-property: opacity;
+  transition: 0.2s ease all;
+}
+
+.main-nav__menu-link--catalog:hover + .main-nav__catalog,
+.main-nav__catalog:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.main-nav__catalog-item {
+  display: inline-block;
+  vertical-align: top;
+
+  box-sizing: border-box;
+
+  min-width: 200px;
+
+  padding-left: 40px;
+
+  &--first {
+    padding-left: 0;
+  }
+}
+
+.main-nav__catalog-link {
+  @include link-reset;
+
+  display: block;
+
+  line-height: 36px;
+
+  transition-property: opacity;
+  transition: 0.1s ease all;
+
+  &:hover {
+    color: $text-primary-60;
+  }
+
+  &:active {
+    color: $text-primary-30;
+  }
 }
