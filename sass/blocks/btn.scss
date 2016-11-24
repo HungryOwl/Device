@@ -1,0 +1,63 @@
+.btn {
+  @include link-reset;
+
+  display: inline-block;
+  position: relative;
+
+  margin-top: 24px;
+
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  font-family: "Gilroy";
+  font-weight: bold;
+
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  letter-spacing: $letter-space;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+
+    z-index: 1;
+
+    height: 8px;
+
+    top: 50%;
+    left: 0;
+    right: 0;
+
+    background-color: $fourth-color;
+
+    transform: translateY(-50%);
+
+    transition-property: height;
+    transition: 0.2s ease all;
+  }
+
+  &:hover::before {
+    height: 100%;
+  }
+}
+
+.btn__content {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+
+  padding-left: 43px;
+  padding-right: 44px;
+
+  font-family: "Gilroy";
+  font-weight: bold;
+
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  letter-spacing: $letter-space;
+}
