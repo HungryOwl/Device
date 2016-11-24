@@ -42,6 +42,14 @@
   &:hover::before {
     height: 100%;
   }
+
+  &:active::before {
+    height: 100%;
+  }
+}
+
+.btn:active .btn__content {
+  color: $text-primary-30;
 }
 
 .btn__content {
@@ -60,4 +68,7 @@
   text-transform: uppercase;
 
   letter-spacing: $letter-space;
+
+  transition-property: color;
+  transition: 0.1s ease all;
 }
