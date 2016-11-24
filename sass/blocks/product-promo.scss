@@ -6,6 +6,8 @@
 
   min-height: 482px;
 
+  top: -108px;
+
   &__item {
     @include clearfix;
 
@@ -17,6 +19,37 @@
 
     transition-property: opacity;
     transition-duration: 0.2s;
+  }
+
+  &__item--1::before {
+    content: "01";
+  }
+
+  &__item--2::before {
+    content: "02";
+  }
+
+  &__item--3::before {
+    content: "03";
+  }
+
+  &__item--1::before,
+  &__item--2::before,
+  &__item--3::before {
+    display: block;
+    position: absolute;
+    z-index: 0;
+
+    right: 48px;
+    top: -17px;
+
+    font-family: "Gilroy";
+
+    font-size: 180px;
+    line-height: 180px;
+    font-weight: bold;
+    color: white;
+
   }
 
   #product-1:checked ~ .product-promo__item--1,
@@ -42,6 +75,8 @@
   float: right;
   width: 560px;
 
+  text-align: center;
+
 }
 
 .product-promo__image {
@@ -52,6 +87,8 @@
 
 .product-promo__content {
   float: right;
+  position: relative;
+  z-index: 1;
 
   width: 500px;
 
@@ -80,12 +117,14 @@
 
   font-size: 13px;
   line-height: 20px;
+
+  margin-top: 10px;
 }
 
 .product-promo__value {
   display: inline-block;
 
-  margin-right: 81px;
+  margin-right: 73px;
 
   font-family: "Gilroy";
   font-weight: 300;
