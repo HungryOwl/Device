@@ -1,0 +1,64 @@
+.product-popular {
+  @include container;
+  @include clearfix;
+
+  font-size: 0;
+  text-align: center;
+}
+
+.product-popular__item {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 160px;
+
+  margin-right: 40px;
+
+  overflow: hidden;
+
+  font-size: $font-size;
+  line-height: $line-height;
+
+  &:nth-child(6n) {
+    margin-right: 0;
+  }
+}
+
+.product-popular__container {
+  width: 160px;
+  height: 160px;
+
+  margin: 0;
+
+  background-color: $secondary-color;
+}
+
+.product-popular__image {
+  display: block;
+  position: relative;
+
+  margin: 0 auto;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: auto;
+  height: auto;
+
+  &--bottom {
+
+    top: 43px;
+    transform: none;
+  }
+}
+
+.product-popular__title {
+  margin-top: 35px;
+
+  font-family: "Gilroy";
+  font-weight: bold;
+
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+}
