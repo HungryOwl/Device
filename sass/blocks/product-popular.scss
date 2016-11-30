@@ -8,6 +8,7 @@
 
 .product-popular__link {
   @include link-reset;
+  display: inline-block;
 }
 
 .product-popular__item {

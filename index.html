@@ -214,29 +214,39 @@
 
       <section class="conditions">
         <div class="conditions__wrapper">
-          <input class="conditions__switcher" type="radio" name="delivery" id="delivery">
-          <input class="conditions__switcher" type="radio" name="guarantee" id="guarantee">
-          <input class="conditions__switcher" type="radio" name="credit" id="credit">
+          <input class="conditions__switcher" type="radio" name="condition" id="delivery" checked>
+          <input class="conditions__switcher" type="radio" name="condition" id="warranty">
+          <input class="conditions__switcher" type="radio" name="condition" id="credit">
 
           <div class="conditions__decor-wrapper">
-            <label for="delivery" class="btn conditions__btn">Доставка</label>
-            <label for="guarantee" class="btn conditions__btn">Гарантия</label>
-            <label for="credit" class="btn conditions__btn">Кредит</label>
+            <label for="delivery" class="btn conditions__btn conditions__btn--delivery">
+              <span class="btn__content conditions__btn-content">Доставка</span>
+            </label>
+
+            <label for="warranty" class="btn conditions__btn conditions__btn--warranty">
+              <span class="btn__content conditions__btn-content">Гарантия</span>
+            </label>
+
+            <label for="credit" class="btn conditions__btn conditions__btn--credit">
+              <span class="btn__content conditions__btn-content">Кредит</span>
+            </label>
           </div>
 
-          <div class="conditions__info conditions__info--delivery">
-            <h3 class="conditions__title">Доставка</h3>
-            <p class="conditions__content">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </div>
+          <div class="conditions__info-wrapper">
+            <section class="conditions__info conditions__info--delivery">
+              <h3 class="conditions__title">Доставка</h3>
+              <p class="conditions__content">Мы с&nbsp;удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на&nbsp;ваш этаж.</p>
+            </section>
 
-          <div class="conditions__info conditions__info--warranty">
-            <h3 class="conditions__title">Гарантия</h3>
-            <p class="conditions__content">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-          </div>
+            <section class="conditions__info conditions__info--warranty">
+              <h3 class="conditions__title">Гарантия</h3>
+              <p class="conditions__content">Если из-за возгарания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом&nbsp;—&nbsp;не&nbsp;переживайте, мы&nbsp;выдадим вам новый. Товар, не дом, конечно же.</p>
+            </section>
 
-          <div class="conditions__info conditions__info--warranty">
-            <h3 class="conditions__title">Кредит</h3>
-            <p class="conditions__content">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            <section class="conditions__info conditions__info--credit">
+              <h3 class="conditions__title">Кредит</h3>
+              <p class="conditions__content">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </section>
           </div>
         </div>
       </section>
