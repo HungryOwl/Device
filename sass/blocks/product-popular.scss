@@ -6,11 +6,6 @@
   text-align: center;
 }
 
-.product-popular__link {
-  @include link-reset;
-  display: inline-block;
-}
-
 .product-popular__item {
   display: inline-block;
   vertical-align: top;
@@ -31,54 +26,78 @@
   }
 }
 
-.product-popular__link:hover .product-popular__container {
-  background-color: $fourth-color;
+.product-popular__link {
+  @include link-reset;
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+
+    width: 160px;
+    height: 160px;
+
+    background-color: $secondary-color;
+
+    transition-property: background-color;
+    transition: 0.2s ease all;
+  }
+
+  &:hover::before {
+    background-color: $fourth-color;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    width: 160px;
+    height: 160px;
+
+    top: 0;
+    left: 0;
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    transition-property: opacity;
+    transition: 0.2s ease all;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
-.product-popular__link:active .product-popular__image {
-  opacity: 0.3;
+.product-popular__link--virtual::after {
+  background-image: url("../img/popular-1.png");
+}
+
+.product-popular__link--monopod::after {
+  background-image: url("../img/popular-2.png");
+  background-position: 50% 100%;
+}
+
+.product-popular__link--camera::after {
+  background-image: url("../img/popular-3.png");
+}
+
+.product-popular__link--bracelet::after {
+  background-image: url("../img/popular-4.png");
+}
+
+.product-popular__link--clock::after {
+  background-image: url("../img/popular-5.png");
+}
+
+.product-popular__link--quadrocopt::after {
+  background-image: url("../img/popular-6.png");
 }
 
 .product-popular__link:active .product-popular__title {
   color: $primary-color-30;
-}
-
-.product-popular__container {
-  display: block;
-  font-size: 0;
-  line-height: 160px;
-
-  text-align: center;
-
-  width: 160px;
-  height: 160px;
-
-  margin: 0;
-
-  background-color: $secondary-color;
-
-  transition-property: background-color;
-  transition: 0.2s ease all;
-}
-
-.product-popular__image {
-  display: inline-block;
-  vertical-align: middle;
-
-  font-size: $font-size;
-  line-height: $line-height;
-
-  margin: 0 auto;
-
-  width: auto;
-  height: auto;
-
-  transition-property: opacity;
-  transition: 0.1s ease all;
-
-  &--bottom {
-    vertical-align: bottom;
-  }
 }
 
 .product-popular__title {
