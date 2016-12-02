@@ -46,6 +46,20 @@
     transition-property: fill;
     transition: 0.2s ease all;
   }
+
+  &__icon--user {
+    left: -2px;
+    bottom: 3px;
+  }
+
+  &__icon--compare {
+    left: 7px;
+    bottom: 3px;
+  }
+
+  &__icon--cart {
+    bottom: 2px;
+  }
 }
 
 .user-menu__item:hover .user-menu__icon {
@@ -56,3 +70,34 @@
   fill: $primary-color-30;
 }
 
+.user-menu--footer .user-menu__icon {
+  fill: $secondary-color-light;
+}
+
+.user-menu--footer .user-menu__item:hover .user-menu__icon {
+  fill: $fourth-color;
+}
+
+.user-menu--footer .user-menu__item:active .user-menu__icon {
+  fill: $fourth-color-30;
+}
+
+.user-menu--footer {
+  float: right;
+
+  width: auto;
+
+  padding-top: 2px;
+}
+
+.user-menu--footer .user-menu__item {
+  color: $text-third-70;
+}
+
+.user-menu--footer .user-menu__item:hover {
+  color: $text-third;
+}
+
+.user-menu--footer .user-menu__item:active {
+  color: $text-third-30;
+}

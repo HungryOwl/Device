@@ -1,0 +1,11 @@
+.page-footer {
+  padding-top: 58px;
+  padding-bottom: 64px;
+
+  color: $text-third;
+  background-color: $sixth-color;
+}
+
+.page-footer__wrapper {
+  @include container;
+}

@@ -4,13 +4,19 @@ $black-60: rgba($black, 0.6);
 $black-30: rgba($black, 0.3);
 
 $white: #fff;
+$white-10: rgba($white, 0.1);
 $white-30: rgba($white, 0.3);
+$white-60: rgba($white, 0.6);
+$white-70: rgba($white, 0.7);
 
 $light-skin-1: #f7e296;
 $light-skin-2: #f7e184;
 
 $orange: #f0c52e;
+$orange-30: rgba($orange, 0.3);
+
 $gray: #e5e5e5;
+$dark-gray: #464646;
 
 // width
 $main-width: 1160px;
@@ -26,11 +32,17 @@ $secondary-color: $light-skin-1;
 $secondary-color-light: $light-skin-2;
 
 $third-color: $white;
+$third-color-10: $white-10;
 $third-color-30: $white-30;
+$third-color-60: $white-60;
+$third-color-70: $white-70;
 
 $fourth-color: $orange;
+$fourth-color-30: $orange-30;
 
 $fifth-color: $gray;
+
+$sixth-color: $dark-gray;
 
 $bg-main: $white;
 
@@ -46,6 +58,10 @@ $text-primary-60: $primary-color-60;
 $text-primary-30: $primary-color-30;
 
 $text-secondary: $secondary-color-light;
+$text-secondary-bright: $fourth-color;
+$text-secondary-bright-30: $orange-30;
 
 $text-third: $third-color;
 $text-third-30: $third-color-30;
+$text-third-60: $third-color-60;
+$text-third-70: $third-color-70;

@@ -12,26 +12,22 @@
       <a class="logo" href="#">Device</a>
 
       <form class="search-form" action="/echo" method="get">
-        <!-- <span>
-          <svg width="28" height="35">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-search"></use>
-          </svg>
-        </span> -->
+        </span>
         <input class="search-form__search search" type="search" placeholder="Поиск по сайту" name="search" id="search-1" autofocus>
         <input class="search-form__submit" type="submit" value="Найти" name="submit" id="find">
         <label class="search-form__decor search-form__decor--icon-search" for="search-1"></label>
       </form>
 
-      <section class="user-menu user-menu--header">
+      <section class="user-menu">
         <a class="user-menu__item user-menu__item--name" href="#">
-          <svg class="user-menu__icon icon icon--user icon-footer" width="15" height="13">
+          <svg class="user-menu__icon user-menu__icon--user icon" width="15" height="13">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-user"></use>
           </svg>
           Валентин Петухов
         </a>
 
         <a class="user-menu__item user-menu__item--login user-menu__item--login-header" href="#">
-            <svg class="user-menu__icon icon icon--user icon-footer" width="15" height="13">
+            <svg class="user-menu__icon user-menu__icon--user icon" width="15" height="13">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-user"></use>
             </svg>
             Войти
@@ -40,14 +36,14 @@
         <a class="user-menu__item user-menu__item--logout" href="#">Выйти</a>
 
         <a class="user-menu__item user-menu__item--compare" href="#">
-          <svg class="user-menu__icon icon icon--compare icon-footer" width="10" height="10">
+          <svg class="user-menu__icon user-menu__icon--compare icon" width="10" height="10">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-compare"></use>
           </svg>
           Сравнить
         </a>
 
         <a class="user-menu__item" href="#">
-          <svg class="user-menu__icon icon icon--cart icon-footer" width="15" height="13">
+          <svg class="user-menu__icon user-menu__icon--cart icon" width="15" height="13">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-cart"></use>
           </svg>
           Корзина
@@ -268,30 +264,85 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="logo" href="#">Device</a>
-        <section class="user-menu user-menu--header">
-          <a href="#" class="user-menu__login user-menu__login--footer">Войти</a>
-          <a href="#" class="user-menu__compare">Сравнить</a>
-          <a href="#" class="user-menu__basket">Корзина</a>
+        <a href="#" class="logo logo--footer">Device</a>
+
+        <section class="user-menu user-menu--footer">
+          <a class="user-menu__item user-menu__item--name" href="#">
+            <svg class="user-menu__icon user-menu__icon--user icon" width="15" height="13">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-user"></use>
+            </svg>
+            Валентин Петухов
+          </a>
+
+          <a class="user-menu__item user-menu__item--login" href="#">
+              <svg class="user-menu__icon user-menu__icon--user icon" width="15" height="13">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-user"></use>
+              </svg>
+              Войти
+          </a>
+
+          <a class="user-menu__item user-menu__item--logout" href="#">Выйти</a>
+
+          <a class="user-menu__item user-menu__item--compare" href="#">
+            <svg class="user-menu__icon user-menu__icon--compare icon" width="10" height="10">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-compare"></use>
+            </svg>
+            Сравнить
+          </a>
+
+          <a class="user-menu__item" href="#">
+            <svg class="user-menu__icon user-menu__icon--cart icon" width="15" height="13">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-cart"></use>
+            </svg>
+            Корзина
+          </a>
         </section>
 
-        <p class="contacts">г. Москва, ул. Строителей, 15</p>
-        <section class="conditions-links">
-          <a class="conditions-link page-footer__link" href="#">Доставка</a>
-          <a class="conditions-link page-footer__link" href="#">Гарантия</a>
-          <a class="conditions-link page-footer__link" href="#">Контакты</a>
-        </section>
-        <p class="phone">Тел.: +7 (495) 495-95-95</p>
+        <div class="contacts">
+          <p class="address address--footer">г. Москва, ул. Строителей, 15</p>
+          <section class="main-nav main-nav--footer">
+            <ul class="main-nav__items">
+              <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Доставка</a></li>
+              <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Гарантия</a></li>
+              <li class="main-nav__menu-item main-nav__menu-item--right-side"><a href="#" class="main-nav__menu-link">Контакты</a></li>
+            </ul>
+          </section>
+          <p class="phone phone--footer">Тел.: +7 (495) 495-95-95</p>
+        </div>
 
-        <section class="social">
-          <a class="social-link" href="#">Facebook</a>
-          <a class="social-link" href="#">Instagram</a>
-          <a class="social-link" href="#">Twitter</a>
-        </section>
+        <div class="social">
+          <section class="social-links">
+            <a class="social-link" href="#">
+              <svg class="social-link__icon social-link__icon--facebook icon" width="12" height="22">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-facebook"></use>
+              </svg>
+              Facebook
+            </a>
 
-        <section class="copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
-        </section>
+            <a class="social-link" href="#">
+              <svg class="social-link__icon social-link__icon--instagram icon" width="22" height="22">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-instagram"></use>
+              </svg>
+              Instagram
+            </a>
+
+            <a class="social-link" href="#">
+              <svg class="social-link__icon icon icon--twitter" width="21" height="18">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-twitter"></use>
+              </svg>
+              Twitter
+            </a>
+          </section>
+
+          <section class="copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru">
+              <svg class="copyright__icon copyright__icon--htmlacademy icon" width="40" height="48">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#htmlacademy"></use>
+              </svg>
+              HTML Academy
+            </a>
+          </section>
+        </div>
       </div>
     </footer>
   </body>

@@ -122,20 +122,15 @@
   }
 
   &--decor {
+    @include decor;
     position: relative;
 
     &::before {
-      position: absolute;
-
-      content: "";
-
-      height: 7px;
+      width: 100px;
 
       top: 110px;
-      left: 18px;
-      right: 42px;
 
-      background-color: $bg-main;
+      background-color: $third-color;
     }
   }
 }
@@ -200,4 +195,28 @@
   &:active {
     color: $text-primary-30;
   }
+}
+
+.main-nav--footer {
+  display: block;
+
+  clear: none;
+  float: left;
+
+  margin-top: 27px;
+  margin-bottom: 16px;
+
+  padding: 0;
+}
+
+.main-nav--footer .main-nav__menu-link {
+  color: $text-third;
+}
+
+.main-nav--footer .main-nav__menu-link:hover {
+  color: $text-third-60;
+}
+
+.main-nav--footer .main-nav__menu-link:active {
+  color: $text-third-30;
 }

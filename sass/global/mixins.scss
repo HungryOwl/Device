@@ -36,3 +36,14 @@
 @mixin lineout {
   outline: 1px solid #999;
 }
+
+@mixin decor {
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+
+    width: 80px;
+    height: 7px;
+  }
+}

@@ -1,18 +1,38 @@
 .device-info {
   @include container;
   @include clearfix;
+
+  padding-bottom: 78px;
 }
 
 .device-info__about-us {
+  @include decor;
+
   float: left;
+  position: relative;
 
   width: 480px;
+
+  &::before {
+    left: 0;
+
+    background-color: $primary-color;
+  }
 }
 
 .device-info__contacts {
+  @include decor;
+
   float: right;
+  position: relative;
 
   width: 560px;
+
+  &::before {
+    left: 0;
+
+    background-color: $primary-color;
+  }
 }
 
 .device-info__title {
@@ -25,20 +45,6 @@
   line-height: 56px;
 
   margin-bottom: 39px;
-
-  &::before {
-    display: block;
-    content: "";
-    position: absolute;
-
-    width: 80px;
-    height: 7px;
-
-    left: 0;
-    top: -47px;
-
-    background-color: $primary-color;
-  }
 }
 
 .device-info__content {

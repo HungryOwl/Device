@@ -1,0 +1,50 @@
+.social-link {
+  display: inline-block;
+  vertical-align: top;
+
+  position: relative;
+
+  width: 34px;
+  height: 34px;
+
+  margin-right: 16px;
+
+  border: 2px solid $third-color-30;
+  border-radius: 50%;
+
+  transition-property: border-color;
+  transition: 0.2s ease all;
+
+  &:hover {
+    border-color: $third-color-60;
+  }
+
+  &:active {
+    border-color: $third-color-10;
+  }
+}
+
+.social-link:hover .social-link__icon {
+  fill: $third-color-60;
+}
+
+.social-link:active .social-link__icon {
+  fill: $third-color-10;
+}
+
+.social-link__icon {
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  fill: $third-color-30;
+
+  transition-property: fill;
+  transition: 0.2s ease all;
+}
+
+.social-link__icon--instagram {
+  top: 19px;
+  left: 19px;
+}

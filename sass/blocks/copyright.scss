@@ -1,0 +1,31 @@
+.copyright {
+  display: block;
+  float: right;
+  position: relative;
+
+  width: 33px;
+  height: 41px;
+
+  font-size: 0;
+  line-height: 0;
+}
+
+.copyright__link {
+  display: block;
+}
+
+.copyright__link:hover .copyright__icon {
+  fill: $fourth-color;
+}
+
+.copyright__link:active .copyright__icon {
+  fill: $fourth-color-30;
+}
+
+.copyright__icon {
+  fill: $secondary-color-light;
+
+  transition-property: fill;
+  transition: 0.2s ease all;
+}
+

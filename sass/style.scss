@@ -8,18 +8,24 @@
 
 // blocks
 
+// A
+@import "blocks/address";
 // B
 @import "blocks/btn";
 // C
 @import "blocks/conditions";
+@import "blocks/contacts";
+@import "blocks/copyright";
 // D
 @import "blocks/device-info";
 // I
 @import "blocks/icon";
 // P
 @import "blocks/page-header";
+@import "blocks/page-footer";
 @import "blocks/product-promo";
 @import "blocks/product-popular";
+@import "blocks/phone";
 // L
 @import "blocks/logo";
 // M
@@ -30,5 +36,8 @@
 @import "blocks/search";
 @import "blocks/slider-items";
 @import "blocks/suppliers";
+@import "blocks/social";
+@import "blocks/social-links";
+@import "blocks/social-link";
 // U
 @import "blocks/user-menu";
