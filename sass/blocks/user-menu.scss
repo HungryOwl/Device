@@ -10,16 +10,16 @@
   }
 
   &__item {
-    @include link-reset;
-    position: relative;
+   @include link-reset;
+   position: relative;
 
-    padding-left: 27px;
-    padding-right: 37px;
-    line-height: 36px;
+   padding-left: 27px;
+   padding-right: 37px;
+   line-height: 36px;
 
-    transition-property: color;
-    transition: 0.2s ease all;
-  }
+   transition-property: color;
+   transition: 0.2s ease all;
+ }
 
   &__item--login-header {
     margin-right: 167px;

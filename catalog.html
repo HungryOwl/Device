@@ -7,32 +7,69 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="logo" href="index.html">Device</a>
-    <input class="search-field" type="search" name="search" id="search" autofocus>
+    <a class="logo" href="#">Device</a>
 
-    <section class="user-menu user-menu--login">
-      <a class="user-menu__item user-menu__item--name" href="#">Валентин Петухов</a>
-      <a class="user-menu__item user-menu__item--login" href="#">Войти</a>
-      <a class="user-menu__item user-menu__item--logout" href="#">Выйти</a>
-      <a class="user-menu__item user-menu__item--compare" href="#">Сравнить</a>
-      <a class="user-menu__item user-menu__item--basket" href="#">Корзина</a>
+    <form class="search-form" action="/echo" method="get">
+      </span>
+      <input class="search-form__search search" type="search" placeholder="Поиск по сайту" name="search" id="search-1" autofocus>
+      <input class="search-form__submit" type="submit" value="Найти" name="submit" id="find">
+      <label class="search-form__decor search-form__decor--icon-search" for="search-1"></label>
+    </form>
+
+    <section class="user-menu">
+      <a href="#" class="user-menu__item user-menu__item--name">
+        <svg class="user-menu__icon user-menu__icon--user icon" width="15" height="13">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-user"></use>
+        </svg>
+        Валентин Петухов
+      </a>
+
+      <a href="#" class="user-menu__item user-menu__item--login user-menu__item--login-header">
+          <svg class="user-menu__icon user-menu__icon--user icon" width="15" height="13">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-user"></use>
+          </svg>
+          Войти
+      </a>
+
+      <a href="#" class="user-menu__item user-menu__item--logout">Выйти</a>
+
+      <a href="#" class="user-menu__item user-menu__item--compare">
+        <svg class="user-menu__icon user-menu__icon--compare icon" width="10" height="10">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-compare"></use>
+        </svg>
+        Сравнить
+      </a>
+
+      <a href="#" class="user-menu__item">
+        <svg class="user-menu__icon user-menu__icon--cart icon" width="15" height="13">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-cart"></use>
+        </svg>
+        Корзина
+      </a>
     </section>
 
-    <section class="main-nav main-nav--index">
+    <section class="main-nav">
       <ul class="main-nav__items">
-        <li class="main-nav__menu-item"><a class="main-nav__menu-link main-nav__link--catalog" href="#">Каталог товаров</a>
+        <li class="main-nav__menu-item main-nav__menu-item--catalog-margin main-nav__menu-item--left-side"><a class="main-nav__menu-link main-nav__menu-link--catalog" href="./catalog.html">Каталог товаров</a>
           <ul class="main-nav__catalog">
-            <li class="main-nav__catalog-item"><a href="#" class="main-nav__catalog-link">Виртуальная реальность</a></li>
-            <li class="main-nav__catalog-item"><a href="#" class="main-nav__catalog-link">Моноподы для&nbsp;селфи</a></li>
-            <li class="main-nav__catalog-item"><a href="#" class="main-nav__catalog-link">Экшн-камеры</a></li>
-            <li class="main-nav__catalog-item"><a href="#" class="main-nav__catalog-link">Фитнесс-браслеты</a></li>
-            <li class="main-nav__catalog-item"><a href="#" class="main-nav__catalog-link">Умные часы</a></li>
-            <li class="main-nav__catalog-item"><a href="#" class="main-nav__catalog-link">Квадрокоптеры</a></li>
+            <li class="main-nav__catalog-item main-nav__catalog-item--first">
+              <a href="#" class="main-nav__catalog-link">Виртуальная реальность</a>
+              <a href="#" class="main-nav__catalog-link">Моноподы для селфи</a>
+              <a href="#" class="main-nav__catalog-link">Экшн-камеры</a>
+            </li>
+            <li class="main-nav__catalog-item">
+              <a href="#" class="main-nav__catalog-link">Фитнесс-браслеты</a>
+              <a href="#" class="main-nav__catalog-link">Умные часы</a>
+            </li>
+            <li class="main-nav__catalog-item">
+              <a href="#" class="main-nav__catalog-link">Квадрокоптеры</a>
+            </li>
+            <li class="main-nav__catalog-item">
           </ul>
         </li>
-        <li class="main-nav__menu-item"><a class="conditions-link main-nav__menu-link" href="#">Доставка</a></li>
-        <li class="main-nav__menu-item"><a class="conditions-link main-nav__menu-link" href="#">Гарантия</a></li>
-        <li class="main-nav__menu-item"><a class="conditions-link main-nav__menu-link" href="#">Контакты</a></li>
+        <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link main-nav__menu-link--decor">Доставка</a></li>
+        <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Гарантия</a></li>
+        <li class="main-nav__menu-item main-nav__menu-item--right-side"><a href="#" class="main-nav__menu-link">Контакты</a></li>
       </ul>
     </section>
   </header>

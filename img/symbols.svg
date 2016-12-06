@@ -9,16 +9,12 @@
     <circle cx="12" cy="27" r="2"/>
   </symbol>
 
-  <symbol id="icon-compare">
-    <g>
-      <rect stroke="#fff" id="svg_2" height="208" width="100" y="193" x="-0.5" stroke-width="1.5"/>
-      <rect stroke="#fff" id="svg_3" height="387" width="100" y="14" x="136.5" stroke-width="1.5"/>
-      <rect stroke="#fff" id="svg_4" height="387" width="40" y="13" x="235.5" stroke-width="1.5" fill="#b9a970"/>
-      <rect stroke="#fff" id="svg_6" height="10" width="0.908632" y="0" x="5.6" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#b9a970"/>
-      <rect stroke="#fff" id="svg_7" height="10" width="1.848595" y="0" x="3.8" stroke-opacity="null" stroke-width="0"/>
-      <rect stroke="#fff" id="svg_10" height="5.6" width="1.848595" y="4.5" x="0" stroke-opacity="null" stroke-width="0"/>
-      <rect stroke="#fff" id="svg_11" height="8" width="2" y="2" x="8" stroke-opacity="null" stroke-width="0"/>
-    </g>
+  <symbol id="icon-compare" viewBox="0 0 1000 1000">
+    <path d="M70.5,388.5v407.9h231.7V388.5c0-33.1-26.9-60-60-60H130.5C97.4,328.5,70.5,355.3,70.5,388.5z"/>
+    <path d="M445.4,180.2c-33.1,0-60,26.9-60,60v556.2h231.7V240.2c0-33.1-26.9-60-60-60H445.4z"/>
+    <path d="M760.3,24c-33.1,0-60,26.9-60,60v712.3H932V84c0-33.1-26.9-60-60-60H760.3z"/>
+    <path d="M932,866.3h-9.3H709.6H607.8H394.7H292.9H79.8h-9.3c-33.1,0-60,26.9-60,60c0,33.1,26.9,60,60,60H932c33.1,0,60-26.9,60-60
+      C992,893.2,965.1,866.3,932,866.3z"/>
   </symbol>
 
   <symbol id="icon-facebook" viewBox="0 0 8.673 18.944">

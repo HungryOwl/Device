@@ -9,3 +9,14 @@
 .page-footer__wrapper {
   @include container;
 }
+
+.page-footer__wrapper > *:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.page-footer__wrapper > *:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
