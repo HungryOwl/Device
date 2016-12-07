@@ -1,238 +1,294 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <link href="./css/style.css" rel="stylesheet">
-  <title>Device</title>
-</head>
-<body>
-  <header class="page-header">
-    <a class="logo" href="#">Device</a>
+  <head>
+    <meta charset="utf-8">
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+    <title>Device</title>
+  </head>
+  <body>
+    <header class="page-header page-header--inner-page">
+      <a class="logo" href="#">Device</a>
 
-    <form class="search-form" action="/echo" method="get">
-      </span>
-      <input class="search-form__search search" type="search" placeholder="Поиск по сайту" name="search" id="search-1" autofocus>
-      <input class="search-form__submit" type="submit" value="Найти" name="submit" id="find">
-      <label class="search-form__decor search-form__decor--icon-search" for="search-1"></label>
-    </form>
+      <form class="search-form" action="/echo" method="get">
+        <input class="search-form__search search" type="search" placeholder="Поиск по сайту" name="search" id="search-1" autofocus>
+        <input class="search-form__submit" type="submit" value="Найти" name="submit" id="find">
+        <label class="search-form__decor search-form__decor--icon-search" for="search-1"></label>
+      </form>
 
-    <section class="user-menu">
-      <a href="#" class="user-menu__item user-menu__item--name">
-        <svg class="user-menu__icon user-menu__icon--user icon" width="15" height="13">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-user"></use>
-        </svg>
-        Валентин Петухов
-      </a>
-
-      <a href="#" class="user-menu__item user-menu__item--login user-menu__item--login-header">
+      <section class="user-menu">
+        <a href="#" class="user-menu__item user-menu__item--name">
           <svg class="user-menu__icon user-menu__icon--user icon" width="15" height="13">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-user"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-user"></use>
           </svg>
-          Войти
-      </a>
+          Валентин Петухов
+        </a>
 
-      <a href="#" class="user-menu__item user-menu__item--logout">Выйти</a>
+        <a href="#" class="user-menu__item user-menu__item--login user-menu__item--login-header">
+            <svg class="user-menu__icon user-menu__icon--user icon" width="15" height="13">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-user"></use>
+            </svg>
+            Войти
+        </a>
 
-      <a href="#" class="user-menu__item user-menu__item--compare">
-        <svg class="user-menu__icon user-menu__icon--compare icon" width="10" height="10">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-compare"></use>
-        </svg>
-        Сравнить
-      </a>
+        <a href="#" class="user-menu__item user-menu__item--logout">Выйти</a>
 
-      <a href="#" class="user-menu__item">
-        <svg class="user-menu__icon user-menu__icon--cart icon" width="15" height="13">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-cart"></use>
-        </svg>
-        Корзина
-      </a>
-    </section>
+        <a href="#" class="user-menu__item user-menu__item--compare">
+          <svg class="user-menu__icon user-menu__icon--compare icon" width="10" height="10">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-compare"></use>
+          </svg>
+          Сравнить
+        </a>
 
-    <section class="main-nav">
-      <ul class="main-nav__items">
-        <li class="main-nav__menu-item main-nav__menu-item--catalog-margin main-nav__menu-item--left-side"><a class="main-nav__menu-link main-nav__menu-link--catalog" href="./catalog.html">Каталог товаров</a>
-          <ul class="main-nav__catalog">
-            <li class="main-nav__catalog-item main-nav__catalog-item--first">
-              <a href="#" class="main-nav__catalog-link">Виртуальная реальность</a>
-              <a href="#" class="main-nav__catalog-link">Моноподы для селфи</a>
-              <a href="#" class="main-nav__catalog-link">Экшн-камеры</a>
-            </li>
-            <li class="main-nav__catalog-item">
-              <a href="#" class="main-nav__catalog-link">Фитнесс-браслеты</a>
-              <a href="#" class="main-nav__catalog-link">Умные часы</a>
-            </li>
-            <li class="main-nav__catalog-item">
-              <a href="#" class="main-nav__catalog-link">Квадрокоптеры</a>
-            </li>
-            <li class="main-nav__catalog-item">
-          </ul>
-        </li>
-        <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link main-nav__menu-link--decor">Доставка</a></li>
-        <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Гарантия</a></li>
-        <li class="main-nav__menu-item main-nav__menu-item--right-side"><a href="#" class="main-nav__menu-link">Контакты</a></li>
-      </ul>
-    </section>
-  </header>
+        <a href="#" class="user-menu__item">
+          <svg class="user-menu__icon user-menu__icon--cart icon" width="15" height="13">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-cart"></use>
+          </svg>
+          Корзина
+        </a>
+      </section>
 
-  <main class="page-main">
-    <section class="product-name">
-      <h2 class="product-name__title">Моноподы для&nbsp;селфи</h2>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
-        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог товаров</a></li>
-        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__link--active">Моноподы для селфи</a></li>
-      </ul>
-    </section>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__menu-item main-nav__menu-item--catalog-margin main-nav__menu-item--left-side"><a class="main-nav__menu-link main-nav__menu-link--catalog" href="./catalog.html">Каталог товаров</a>
+            <ul class="main-nav__catalog">
+              <li class="main-nav__catalog-item main-nav__catalog-item--first">
+                <a href="#" class="main-nav__catalog-link">Виртуальная реальность</a>
+                <a href="#" class="main-nav__catalog-link">Моноподы для селфи</a>
+                <a href="#" class="main-nav__catalog-link">Экшн-камеры</a>
+              </li>
+              <li class="main-nav__catalog-item">
+                <a href="#" class="main-nav__catalog-link">Фитнесс-браслеты</a>
+                <a href="#" class="main-nav__catalog-link">Умные часы</a>
+              </li>
+              <li class="main-nav__catalog-item">
+                <a href="#" class="main-nav__catalog-link">Квадрокоптеры</a>
+              </li>
+              <li class="main-nav__catalog-item">
+            </ul>
+          </li>
+          <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link main-nav__menu-link--decor">Доставка</a></li>
+          <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Гарантия</a></li>
+          <li class="main-nav__menu-item main-nav__menu-item--right-side"><a href="#" class="main-nav__menu-link">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <aside class="column-filter">
-      <form class="filter-form" action="#" method="get">
-        <h3 class="filter-form__name">Фильтр:</h3>
+    <main class="page-main">
+      <section class="product-name">
+        <h2 class="product-name__title">Моноподы для&nbsp;селфи</h2>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог товаров</a></li>
+          <li class="breadcrumbs__item breadcrumbs__item--active"><a href="#" class="breadcrumbs__link breadcrumbs__link--active">Моноподы для селфи</a></li>
+        </ul>
+      </section>
 
-        <div class="filter-form__range-filter">
-          <h4 class="filter-form__title">Стоимость</h4>
-          <div class="filter-form__range-controls">
-            <div class="filter-form__scale">
-              <div class="filter-form__bar"></div>
+      <aside class="column-filter">
+        <form class="filter-form" action="#" method="get">
+          <h3 class="filter-form__name">Фильтр:</h3>
+
+          <div class="filter-form__range-filter">
+            <h4 class="filter-form__title">Стоимость</h4>
+            <div class="filter-form__range-controls">
+              <div class="filter-form__scale">
+                <div class="filter-form__bar"></div>
+              </div>
+
+              <div class="filter-form__toggle filter-form__toggle--min-toggle"></div>
+              <div class="filter-form__toggle filter-form__toggle--max-toggle"></div>
             </div>
 
-            <div class="filter-form__toggle filter-form__toggle--min-toggle"></div>
-            <div class="filter-form__toggle filter-form__toggle--max-toggle"></div>
+            <div class="filter-form__price-controls">
+              <label for="min-price" class="filter-form__min-price">от</label><input class="filter-form__min-field" name="min-price" id="min-price" type="number" value="0" min="0" max="50000" step="50">
+              <label for="max-price" class="filter-form__max-price">до</label><input class="filter-form__max-field" name="max-price" id="max-price" type="number" value="5000" min="0" max="50000" step="50">
+            </div>
           </div>
 
-          <div class="filter-form__price-controls">
-            <label for="min-price" class="filter-form__min-price">от</label><input class="filter-form__min-field" name="min-price" id="min-price" type="number" value="0" min="0" max="50000" step="50">
-            <label for="max-price" class="filter-form__max-price">до</label><input class="filter-form__max-field" name="max-price" id="max-price" type="number" value="5000" min="0" max="50000" step="50">
-          </div>
+          <fieldset class="filter-form__group">
+            <legend class="filter-form__title">Цвет</legend>
+
+            <label class="filter-form__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox">
+              <span class="checkbox__text">Черный</span>
+            </label>
+
+            <label class="filter-form__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox">
+              <span class="checkbox__text">Белый</span>
+            </label>
+
+            <label class="filter-form__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox">
+              <span class="checkbox__text">Синий</span>
+            </label>
+
+            <label class="filter-form__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox">
+              <span class="checkbox__text">Красный</span>
+            </label>
+
+            <label class="filter-form__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox">
+              <span class="checkbox__text">Розовый</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="filter-form__group">
+            <legend>Bluetooth
+              <label class="filter-form__radio radio">
+                <input class="radio__input" type="radio">
+                <span class="radio__text"></span>
+              </label>
+
+              <label class="filter-form__radio radio">
+                <input class="radio__input" type="radio">
+                <span class="radio__text"></span>
+              </label>
+            </legend>
+          </fieldset>
+
+          <input class="filter-form__btn btn" type="submit" value="Показать">
+        </form>
+      </aside>
+
+      <section class="catalog">
+        <section class="catalog__sort">
+          <h3 class="catalog__name">Сортировка:</h3>
+          <a class="catalog__sort-item" href="#">По цене</a>
+          <a class="catalog__sort-item" href="#">По типу</a>
+          <a class="catalog__sort-item" href="#">По популярности</a>
+        </section>
+
+        <article class="catalog__item product">
+          <a class="product__link" href="#">
+            <img class="product__img" src="#" alt="Любительская селфи-палка">
+            <h4 class="product__title">Любительская селфи-палка</h4>
+          </a>
+
+          <span class="product__price">500&nbsp;руб.</span>
+        </article>
+
+        <article class="catalog__item product">
+          <a class="product__link" href="#">
+            <img class="product__img" src="#" alt="Профессиональная селфи-палка">
+            <h4 class="product__title">Профессиональная селфи-палка</h4>
+          </a>
+
+          <span class="product__price">1500&nbsp;руб.</span>
+        </article>
+
+        <article class="catalog__item product">
+          <a class="product__link" href="#">
+            <img class="product__img" src="#" alt="Непотопляемая селфи-палка">
+            <h4 class="product__title">Непотопляемая селфи-палка</h4>
+          </a>
+
+          <span class="product__price">2500&nbsp;руб.</span>
+        </article>
+
+        <article class="catalog__item product">
+          <a class="product__link" href="#">
+            <img class="product__img" src="#" alt="Селфи-палка Следуй за мной">
+            <h4 class="product__title">Селфи-палка "Следуй за мной"</h4>
+          </a>
+
+          <span class="product__price">4900&nbsp;руб.</span>
+        </article>
+      </section>
+
+      <section class="pagination">
+        <a class="pagination__item pagination__item--backward" href="#">Назад</a>
+        <a class="pagination__item pagination__item--active" href="#">1</a>
+        <a class="pagination__item" href="#">2</a>
+        <a class="pagination__item" href="#">3</a>
+        <a class="pagination__item pagination__item--forward" href="#">Вперед</a>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a href="#" class="logo logo--footer">Device</a>
+
+        <section class="user-menu user-menu--footer">
+          <a href="#" class="user-menu__item user-menu__item--name">
+            <svg class="user-menu__icon user-menu__icon--user icon" width="15" height="13">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-user"></use>
+            </svg>
+            Валентин Петухов
+          </a>
+
+          <a href="#" class="user-menu__item user-menu__item--login">
+            <svg class="user-menu__icon user-menu__icon--user icon" width="15" height="13">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-user"></use>
+            </svg>
+            Войти
+          </a>
+
+          <a href="#" class="user-menu__item user-menu__item--logout">Выйти</a>
+
+          <a href="#" class="user-menu__item user-menu__item--compare">
+            <svg class="user-menu__icon user-menu__icon--compare icon" width="10" height="10">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-compare"></use>
+            </svg>
+            Сравнить
+          </a>
+
+          <a href="#" class="user-menu__item">
+            <svg class="user-menu__icon user-menu__icon--cart icon" width="15" height="13">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-cart"></use>
+            </svg>
+            Корзина
+          </a>
+        </section>
+
+        <div class="contacts">
+          <p class="address address--footer">г. Москва, ул. Строителей, 15</p>
+          <section class="main-nav main-nav--footer">
+            <ul class="main-nav__items">
+              <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Доставка</a></li>
+              <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Гарантия</a></li>
+              <li class="main-nav__menu-item main-nav__menu-item--right-side"><a href="#" class="main-nav__menu-link">Контакты</a></li>
+            </ul>
+          </section>
+          <p class="phone phone--footer">Тел.: +7 (495) 495-95-95</p>
         </div>
 
-        <fieldset class="filter-form__group">
-          <legend class="filter-form__title">Цвет</legend>
+        <div class="social">
+          <section class="social-links">
+            <a href="#" class="social-link">
+              <svg class="social-link__icon social-link__icon--facebook icon" width="12" height="22">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-facebook"></use>
+              </svg>
+              Facebook
+            </a>
 
-          <label class="filter-form__checkbox checkbox">
-            <input class="checkbox__input" type="checkbox">
-            <span class="checkbox__text">Черный</span>
-          </label>
+            <a href="#" class="social-link">
+              <svg class="social-link__icon social-link__icon--instagram icon" width="22" height="22">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-instagram"></use>
+              </svg>
+              Instagram
+            </a>
 
-          <label class="filter-form__checkbox checkbox">
-            <input class="checkbox__input" type="checkbox">
-            <span class="checkbox__text">Белый</span>
-          </label>
+            <a href="#" class="social-link">
+              <svg class="social-link__icon icon icon--twitter" width="21" height="18">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-twitter"></use>
+              </svg>
+              Twitter
+            </a>
+          </section>
 
-          <label class="filter-form__checkbox checkbox">
-            <input class="checkbox__input" type="checkbox">
-            <span class="checkbox__text">Синий</span>
-          </label>
-
-          <label class="filter-form__checkbox checkbox">
-            <input class="checkbox__input" type="checkbox">
-            <span class="checkbox__text">Красный</span>
-          </label>
-
-          <label class="filter-form__checkbox checkbox">
-            <input class="checkbox__input" type="checkbox">
-            <span class="checkbox__text">Розовый</span>
-          </label>
-        </fieldset>
-
-        <fieldset class="filter-form__group">
-          <legend>Bluetooth
-            <label class="filter-form__radio radio">
-              <input class="radio__input" type="radio">
-              <span class="radio__text"></span>
-            </label>
-
-            <label class="filter-form__radio radio">
-              <input class="radio__input" type="radio">
-              <span class="radio__text"></span>
-            </label>
-          </legend>
-        </fieldset>
-
-        <input class="filter-form__btn btn" type="submit" value="Показать">
-      </form>
-    </aside>
-
-    <section class="catalog">
-      <section class="catalog__sort">
-        <h3 class="catalog__name">Сортировка:</h3>
-        <a class="catalog__sort-item" href="#">По цене</a>
-        <a class="catalog__sort-item" href="#">По типу</a>
-        <a class="catalog__sort-item" href="#">По популярности</a>
-      </section>
-
-      <article class="catalog__item product">
-        <a class="product__link" href="#">
-          <img class="product__img" src="#" alt="Любительская селфи-палка">
-          <h4 class="product__title">Любительская селфи-палка</h4>
-        </a>
-
-        <span class="product__price">500&nbsp;руб.</span>
-      </article>
-
-      <article class="catalog__item product">
-        <a class="product__link" href="#">
-          <img class="product__img" src="#" alt="Профессиональная селфи-палка">
-          <h4 class="product__title">Профессиональная селфи-палка</h4>
-        </a>
-
-        <span class="product__price">1500&nbsp;руб.</span>
-      </article>
-
-      <article class="catalog__item product">
-        <a class="product__link" href="#">
-          <img class="product__img" src="#" alt="Непотопляемая селфи-палка">
-          <h4 class="product__title">Непотопляемая селфи-палка</h4>
-        </a>
-
-        <span class="product__price">2500&nbsp;руб.</span>
-      </article>
-
-      <article class="catalog__item product">
-        <a class="product__link" href="#">
-          <img class="product__img" src="#" alt="Селфи-палка Следуй за мной">
-          <h4 class="product__title">Селфи-палка "Следуй за мной"</h4>
-        </a>
-
-        <span class="product__price">4900&nbsp;руб.</span>
-      </article>
-    </section>
-
-    <section class="pagination">
-      <a class="pagination__item pagination__item--backward" href="#">Назад</a>
-      <a class="pagination__item pagination__item--active" href="#">1</a>
-      <a class="pagination__item" href="#">2</a>
-      <a class="pagination__item" href="#">3</a>
-      <a class="pagination__item pagination__item--forward" href="#">Вперед</a>
-    </section>
-  </main>
-
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <a class="logo" href="#">Device</a>
-      <section class="user-menu user-menu--header">
-        <a class="user-menu__login user-menu__login--footer" href="#">Войти</a>
-        <a class="user-menu__compare" href="#">Сравнить</a>
-        <a class="user-menu__basket" href="#">Корзина</a>
-      </section>
-
-      <p class="contacts">г. Москва, ул. Строителей, 15</p>
-      <section class="conditions-links">
-        <a class="conditions-link page-footer__link" href="#">Доставка</a>
-        <a class="conditions-link page-footer__link" href="#">Гарантия</a>
-        <a class="conditions-link page-footer__link" href="#">Контакты</a>
-      </section>
-      <p class="phone">Тел.: +7 (495) 495-95-95</p>
-
-      <section class="social">
-        <a class="social-link" href="#">Facebook</a>
-        <a class="social-link" href="#">Instagram</a>
-        <a class="social-link" href="#">Twitter</a>
-      </section>
-
-      <section class="copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
-      </section>
-    </div>
-  </footer>
-</body>
+          <section class="copyright">
+            <a href="https://htmlacademy.ru" class="copyright__link">
+              <svg class="copyright__icon copyright__icon--htmlacademy icon" width="40" height="48">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#htmlacademy"></use>
+              </svg>
+              HTML Academy
+            </a>
+          </section>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

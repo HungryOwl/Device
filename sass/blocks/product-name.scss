@@ -1,0 +1,28 @@
+.product-name {
+  @include container;
+
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 33px;
+  padding-bottom: 53px;
+}
+
+.product-name > *:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.product-name > *:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.product-name__title {
+  font-family: "Gilroy";
+  font-weight: bold;
+
+  font-size: 47px;
+  line-height: 56px;
+
+  margin-bottom: 14px;
+}

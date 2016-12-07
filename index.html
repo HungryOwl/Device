@@ -12,7 +12,6 @@
       <a class="logo" href="#">Device</a>
 
       <form class="search-form" action="/echo" method="get">
-        </span>
         <input class="search-form__search search" type="search" placeholder="Поиск по сайту" name="search" id="search-1" autofocus>
         <input class="search-form__submit" type="submit" value="Найти" name="submit" id="find">
         <label class="search-form__decor search-form__decor--icon-search" for="search-1"></label>
@@ -50,7 +49,7 @@
         </a>
       </section>
 
-      <section class="main-nav">
+      <nav class="main-nav">
         <ul class="main-nav__items">
           <li class="main-nav__menu-item main-nav__menu-item--catalog-margin main-nav__menu-item--left-side"><a class="main-nav__menu-link main-nav__menu-link--catalog" href="./catalog.html">Каталог товаров</a>
             <ul class="main-nav__catalog">
@@ -73,7 +72,7 @@
           <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Гарантия</a></li>
           <li class="main-nav__menu-item main-nav__menu-item--right-side"><a href="#" class="main-nav__menu-link">Контакты</a></li>
         </ul>
-      </section>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -89,6 +88,7 @@
             <a href="#" class="btn btn--product-promo">
               <span class="btn__content">Подробнее</span>
             </a>
+
             <div class="product-promo__value-wrapper">
               <div class="product-promo__value">8,5 м.
                 <span class="product-promo__property">Длина палки</span>
@@ -152,7 +152,7 @@
         </div>
       </section>
 
-      <article class="product-popular">
+      <div class="product-popular">
         <article class="product-popular__item">
           <a href="#" class="product-popular__link product-popular__link--virtual">
             <h4 class="product-popular__title">Виртуальная реальность</h4>
@@ -188,7 +188,7 @@
             <h4 class="product-popular__title">Квадрокоптеры</h4>
           </a>
         </article>
-      </article>
+      </div>
 
       <section class="conditions">
         <div class="conditions__wrapper">
@@ -311,7 +311,7 @@
         </div>
 
         <div class="social">
-          <section class="social-links">
+          <section class="social-wrapper">
             <a href="#" class="social-link">
               <svg class="social-link__icon social-link__icon--facebook icon" width="12" height="22">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-facebook"></use>
@@ -345,6 +345,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>
