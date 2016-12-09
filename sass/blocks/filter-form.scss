@@ -1,0 +1,122 @@
+.filter-form__wrapper {
+  padding-top: 69px;
+  padding-right: 68px;
+}
+
+.filter-form__title {
+  position: relative;
+
+  font-family: "Gilroy";
+  font-weight: bold;
+
+  font-size: 18px;
+  line-height: 22px;
+
+  margin-bottom: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    height: 2px;
+
+    left: 0;
+    right: 0;
+    top: -13px;
+
+    background-color: $primary-color;
+  }
+}
+
+.filter-form__range-filter {
+  padding-top: 13px;
+
+  min-height: 120px;
+  margin-bottom: 20px;
+}
+
+.filter-form__range-filter > *:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.filter-form__range-filter > *:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.filter-form__range-controls {
+  position: relative;
+
+  min-height: 8px;
+
+  margin-top: 30px;
+  margin-bottom: 3px;
+  padding-top: 6px;
+}
+
+.filter-form__scale {
+  height: 2px;
+
+  background-color: $fifth-color-3;
+}
+
+.filter-form__bar {
+  width: 118px;
+  height: 2px;
+
+  background-color: $seventh-color;
+}
+
+.filter-form__toggle {
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+
+  top: 0;
+  left: 0;
+
+  border: 2px solid $primary-color;
+  border-radius: 50%;
+
+  background-color: $third-color;
+
+  cursor: pointer;
+}
+
+.filter-form__toggle--max-toggle {
+  left: 110px;
+}
+
+.filter-form__price-controls {
+  font-size: 0;
+}
+
+.filter-form__label{
+  display: inline-block;
+  vertical-align: top;
+
+  width: 45%;
+
+  font-family: "Gilroy";
+  font-weight: lighter;
+
+  font-size: 14px;
+  line-height: 22px;
+
+  color: $primary-color-20;
+}
+
+.filter-form__field {
+  font-family: "Gilroy";
+  font-weight: lighter;
+
+  font-size: 14px;
+  line-height: 22px;
+
+  border: none;
+  color: $primary-color-20;
+}
+
+

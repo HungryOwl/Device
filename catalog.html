@@ -85,126 +85,133 @@
         </ul>
       </section>
 
-      <aside class="column-filter">
-        <form class="filter-form" action="#" method="get">
-          <h3 class="filter-form__name">Фильтр:</h3>
-
-          <div class="filter-form__range-filter">
-            <h4 class="filter-form__title">Стоимость</h4>
-            <div class="filter-form__range-controls">
-              <div class="filter-form__scale">
-                <div class="filter-form__bar"></div>
-              </div>
-
-              <div class="filter-form__toggle filter-form__toggle--min-toggle"></div>
-              <div class="filter-form__toggle filter-form__toggle--max-toggle"></div>
-            </div>
-
-            <div class="filter-form__price-controls">
-              <label for="min-price" class="filter-form__min-price">от</label><input class="filter-form__min-field" name="min-price" id="min-price" type="number" value="0" min="0" max="50000" step="50">
-              <label for="max-price" class="filter-form__max-price">до</label><input class="filter-form__max-field" name="max-price" id="max-price" type="number" value="5000" min="0" max="50000" step="50">
-            </div>
+      <div class="catalog-wrapper">
+        <section class="column-filter">
+          <div class="column-filter__title-wrapper">
+            <h3 class="column-filter__title">Фильтр:</h3>
           </div>
 
-          <fieldset class="filter-form__group">
-            <legend class="filter-form__title">Цвет</legend>
+          <form class="column-filter__form filter-form" action="#" method="get">
+            <div class="filter-form__wrapper">
+              <div class="filter-form__range-filter">
+                <h4 class="filter-form__title">Стоимость</h4>
 
-            <label class="filter-form__checkbox checkbox">
-              <input class="checkbox__input" type="checkbox">
-              <span class="checkbox__text">Черный</span>
-            </label>
+                <div class="filter-form__range-controls">
+                  <div class="filter-form__scale">
+                    <div class="filter-form__bar"></div>
+                  </div>
 
-            <label class="filter-form__checkbox checkbox">
-              <input class="checkbox__input" type="checkbox">
-              <span class="checkbox__text">Белый</span>
-            </label>
+                  <div class="filter-form__toggle filter-form__toggle--min-toggle"></div>
+                  <div class="filter-form__toggle filter-form__toggle--max-toggle"></div>
+                </div>
 
-            <label class="filter-form__checkbox checkbox">
-              <input class="checkbox__input" type="checkbox">
-              <span class="checkbox__text">Синий</span>
-            </label>
+                <div class="filter-form__price-controls">
+                  <label class="filter-form__label filter-form__price--min">от <input class="filter-form__field filter-form__field--min" name="min-price" id="min-price" type="number" value="0" min="0" max="50000" step="50"></label>
+                  <label class="filter-form__label filter-form__price--max">до <input class="filter-form__field filter-form__field--max" name="max-price" id="max-price" type="number" value="5000" min="0" max="50000" step="50"></label>
+                </div>
+              </div>
 
-            <label class="filter-form__checkbox checkbox">
-              <input class="checkbox__input" type="checkbox">
-              <span class="checkbox__text">Красный</span>
-            </label>
+              <fieldset class="filter-form__group">
+                <legend class="filter-form__title">Цвет</legend>
 
-            <label class="filter-form__checkbox checkbox">
-              <input class="checkbox__input" type="checkbox">
-              <span class="checkbox__text">Розовый</span>
-            </label>
-          </fieldset>
+                <label class="filter-form__checkbox checkbox">
+                  <input class="checkbox__input" type="checkbox">
+                  <span class="checkbox__text">Черный</span>
+                </label>
 
-          <fieldset class="filter-form__group">
-            <legend>Bluetooth
-              <label class="filter-form__radio radio">
-                <input class="radio__input" type="radio">
-                <span class="radio__text"></span>
-              </label>
+                <label class="filter-form__checkbox checkbox">
+                  <input class="checkbox__input" type="checkbox">
+                  <span class="checkbox__text">Белый</span>
+                </label>
 
-              <label class="filter-form__radio radio">
-                <input class="radio__input" type="radio">
-                <span class="radio__text"></span>
-              </label>
-            </legend>
-          </fieldset>
+                <label class="filter-form__checkbox checkbox">
+                  <input class="checkbox__input" type="checkbox">
+                  <span class="checkbox__text">Синий</span>
+                </label>
 
-          <input class="filter-form__btn btn" type="submit" value="Показать">
-        </form>
-      </aside>
+                <label class="filter-form__checkbox checkbox">
+                  <input class="checkbox__input" type="checkbox">
+                  <span class="checkbox__text">Красный</span>
+                </label>
 
-      <section class="catalog">
-        <section class="catalog__sort">
-          <h3 class="catalog__name">Сортировка:</h3>
-          <a class="catalog__sort-item" href="#">По цене</a>
-          <a class="catalog__sort-item" href="#">По типу</a>
-          <a class="catalog__sort-item" href="#">По популярности</a>
+                <label class="filter-form__checkbox checkbox">
+                  <input class="checkbox__input" type="checkbox">
+                  <span class="checkbox__text">Розовый</span>
+                </label>
+              </fieldset>
+
+              <fieldset class="filter-form__group">
+                <legend class="filter-form__title">Bluetooth</legend>
+
+                <label class="filter-form__radio radio">
+                  <input class="radio__input" type="radio">
+                  <span class="radio__text">Есть</span>
+                </label>
+
+                <label class="filter-form__radio radio">
+                  <input class="radio__input" type="radio">
+                  <span class="radio__text">Нет</span>
+                </label>
+              </fieldset>
+
+              <input class="filter-form__btn btn" type="submit" value="Показать">
+            </div>
+          </form>
         </section>
 
-        <article class="catalog__item product">
-          <a class="product__link" href="#">
-            <img class="product__img" src="#" alt="Любительская селфи-палка">
-            <h4 class="product__title">Любительская селфи-палка</h4>
-          </a>
+        <section class="catalog">
+          <section class="catalog__sort">
+            <h3 class="catalog__name">Сортировка:</h3>
+            <a class="catalog__sort-item" href="#">По цене</a>
+            <a class="catalog__sort-item" href="#">По типу</a>
+            <a class="catalog__sort-item" href="#">По популярности</a>
+          </section>
 
-          <span class="product__price">500&nbsp;руб.</span>
-        </article>
+          <article class="catalog__item product">
+            <a class="product__link" href="#">
+              <img class="product__img" src="#" alt="Любительская селфи-палка">
+              <h4 class="product__title">Любительская селфи-палка</h4>
+            </a>
 
-        <article class="catalog__item product">
-          <a class="product__link" href="#">
-            <img class="product__img" src="#" alt="Профессиональная селфи-палка">
-            <h4 class="product__title">Профессиональная селфи-палка</h4>
-          </a>
+            <span class="product__price">500&nbsp;руб.</span>
+          </article>
 
-          <span class="product__price">1500&nbsp;руб.</span>
-        </article>
+          <article class="catalog__item product">
+            <a class="product__link" href="#">
+              <img class="product__img" src="#" alt="Профессиональная селфи-палка">
+              <h4 class="product__title">Профессиональная селфи-палка</h4>
+            </a>
 
-        <article class="catalog__item product">
-          <a class="product__link" href="#">
-            <img class="product__img" src="#" alt="Непотопляемая селфи-палка">
-            <h4 class="product__title">Непотопляемая селфи-палка</h4>
-          </a>
+            <span class="product__price">1500&nbsp;руб.</span>
+          </article>
 
-          <span class="product__price">2500&nbsp;руб.</span>
-        </article>
+          <article class="catalog__item product">
+            <a class="product__link" href="#">
+              <img class="product__img" src="#" alt="Непотопляемая селфи-палка">
+              <h4 class="product__title">Непотопляемая селфи-палка</h4>
+            </a>
 
-        <article class="catalog__item product">
-          <a class="product__link" href="#">
-            <img class="product__img" src="#" alt="Селфи-палка Следуй за мной">
-            <h4 class="product__title">Селфи-палка "Следуй за мной"</h4>
-          </a>
+            <span class="product__price">2500&nbsp;руб.</span>
+          </article>
 
-          <span class="product__price">4900&nbsp;руб.</span>
-        </article>
-      </section>
+          <article class="catalog__item product">
+            <a class="product__link" href="#">
+              <img class="product__img" src="#" alt="Селфи-палка Следуй за мной">
+              <h4 class="product__title">Селфи-палка "Следуй за мной"</h4>
+            </a>
 
-      <section class="pagination">
-        <a class="pagination__item pagination__item--backward" href="#">Назад</a>
-        <a class="pagination__item pagination__item--active" href="#">1</a>
-        <a class="pagination__item" href="#">2</a>
-        <a class="pagination__item" href="#">3</a>
-        <a class="pagination__item pagination__item--forward" href="#">Вперед</a>
-      </section>
+            <span class="product__price">4900&nbsp;руб.</span>
+          </article>
+
+          <section class="pagination">
+            <a class="pagination__item pagination__item--backward" href="#">Назад</a>
+            <a class="pagination__item pagination__item--active" href="#">1</a>
+            <a class="pagination__item" href="#">2</a>
+            <a class="pagination__item" href="#">3</a>
+            <a class="pagination__item pagination__item--forward" href="#">Вперед</a>
+          </section>
+        </section>
+      </div>
     </main>
 
     <footer class="page-footer">
@@ -256,7 +263,7 @@
         </div>
 
         <div class="social">
-          <section class="social-links">
+          <section class="social-wrapper">
             <a href="#" class="social-link">
               <svg class="social-link__icon social-link__icon--facebook icon" width="12" height="22">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-facebook"></use>
