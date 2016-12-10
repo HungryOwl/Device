@@ -93,9 +93,9 @@
 
           <form class="column-filter__form filter-form" action="#" method="get">
             <div class="filter-form__wrapper">
-              <div class="filter-form__range-filter">
-                <h4 class="filter-form__title">Стоимость</h4>
+              <h4 class="filter-form__title">Стоимость</h4>
 
+              <div class="filter-form__range-filter">
                 <div class="filter-form__range-controls">
                   <div class="filter-form__scale">
                     <div class="filter-form__bar"></div>
@@ -111,48 +111,73 @@
                 </div>
               </div>
 
-              <fieldset class="filter-form__group">
-                <legend class="filter-form__title">Цвет</legend>
+              <div class="filter-form__group">
+                <h4 class="filter-form__title">Цвет</h4>
 
                 <label class="filter-form__checkbox checkbox">
                   <input class="checkbox__input" type="checkbox">
-                  <span class="checkbox__text">Черный</span>
+                  <span class="checkbox__text">
+                    <svg class="checkbox__checked" width="12" height="12">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-yes"></use>
+                    </svg>
+                    Черный
+                  </span>
                 </label>
 
                 <label class="filter-form__checkbox checkbox">
                   <input class="checkbox__input" type="checkbox">
-                  <span class="checkbox__text">Белый</span>
+                  <span class="checkbox__text">
+                    <svg class="checkbox__checked" width="12" height="12">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-yes"></use>
+                    </svg>
+                    Белый
+                  </span>
                 </label>
 
                 <label class="filter-form__checkbox checkbox">
                   <input class="checkbox__input" type="checkbox">
-                  <span class="checkbox__text">Синий</span>
+                  <span class="checkbox__text">
+                    <svg class="checkbox__checked" width="12" height="12">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-yes"></use>
+                    </svg>
+                    Синий
+                  </span>
                 </label>
 
                 <label class="filter-form__checkbox checkbox">
                   <input class="checkbox__input" type="checkbox">
-                  <span class="checkbox__text">Красный</span>
+                  <span class="checkbox__text">
+                    <svg class="checkbox__checked" width="12" height="12">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-yes"></use>
+                    </svg>
+                    Красный
+                  </span>
                 </label>
 
                 <label class="filter-form__checkbox checkbox">
                   <input class="checkbox__input" type="checkbox">
-                  <span class="checkbox__text">Розовый</span>
+                  <span class="checkbox__text">
+                    <svg class="checkbox__checked" width="12" height="12">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-yes"></use>
+                    </svg>
+                    Розовый
+                  </span>
                 </label>
-              </fieldset>
+              </div>
 
-              <fieldset class="filter-form__group">
-                <legend class="filter-form__title">Bluetooth</legend>
+              <div class="filter-form__group">
+                <h4 class="filter-form__title">Bluetooth</h4>
 
                 <label class="filter-form__radio radio">
-                  <input class="radio__input" type="radio">
+                  <input class="radio__input" type="radio" name="bluetooth">
                   <span class="radio__text">Есть</span>
                 </label>
 
                 <label class="filter-form__radio radio">
-                  <input class="radio__input" type="radio">
+                  <input class="radio__input" type="radio" name="bluetooth">
                   <span class="radio__text">Нет</span>
                 </label>
-              </fieldset>
+              </div>
 
               <input class="filter-form__btn btn" type="submit" value="Показать">
             </div>

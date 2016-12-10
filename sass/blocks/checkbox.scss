@@ -1,0 +1,55 @@
+.checkbox {
+  display: block;
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__input:checked ~ .checkbox__text > .checkbox__checked {
+  visibility: visible;
+  opacity: 1;
+}
+
+.checkbox__text {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+
+  font-weight: lighter;
+
+  font-size: 14px;
+  line-height: 40px;
+
+  padding-left: 40px;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 23px;
+    height: 23px;
+
+    top: 50%;
+    left: 0;
+
+    transform: translateY(-50%);
+
+    background-color: $fifth-color-3;
+  }
+}
+
+.checkbox__checked {
+  position: absolute;
+
+  visibility: hidden;
+  opacity: 0;
+
+  top: 13px;
+  left: 5px;
+
+  transition-property: opacity;
+  transition: 0.1s ease all;
+}

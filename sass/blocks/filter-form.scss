@@ -12,7 +12,10 @@
   font-size: 18px;
   line-height: 22px;
 
-  margin-bottom: 30px;
+  width: 100%;
+
+  margin-top: 13px;
+  margin-bottom: 19px;
 
   &::before {
     content: "";
@@ -29,20 +32,7 @@
 }
 
 .filter-form__range-filter {
-  padding-top: 13px;
-
-  min-height: 120px;
-  margin-bottom: 20px;
-}
-
-.filter-form__range-filter > *:first-child {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.filter-form__range-filter > *:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
+  margin-bottom: 28px;
 }
 
 .filter-form__range-controls {
@@ -52,6 +42,7 @@
 
   margin-top: 30px;
   margin-bottom: 3px;
+
   padding-top: 6px;
 }
 
@@ -119,4 +110,19 @@
   color: $primary-color-20;
 }
 
+.filter-form__group {
+  margin-bottom: 31px;
+
+  padding-top: 13px;
+}
+
+.filter-form__group > *:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.filter-form__group > *:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 
