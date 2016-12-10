@@ -55,3 +55,22 @@
   letter-spacing: $letter-space;
   text-transform: uppercase;
 }
+
+.column-filter__form {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    margin-left: calc(50% - 50vw);
+
+    background-color: $fifth-color-6;
+  }
+}

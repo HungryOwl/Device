@@ -1,4 +1,4 @@
-.filter-form__wrapper {
+.filter-form {
   padding-top: 69px;
   padding-right: 68px;
 }
@@ -126,3 +126,17 @@
   padding-bottom: 0;
 }
 
+.filter-form__group:last-of-type {
+  margin-bottom: 27px;
+}
+
+.form-submit__btn {
+  margin-top: 0;
+}
+
+.form-submit__btn-content {
+  border: none;
+  background-color: transparent;
+
+  outline: none;
+}

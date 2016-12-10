@@ -6,9 +6,17 @@
   display: none;
 }
 
+.checkbox__input:checked ~ .checkbox__text {
+  &::before {
+    background-color: $gray-4;
+  }
+}
+
 .checkbox__input:checked ~ .checkbox__text > .checkbox__checked {
   visibility: visible;
   opacity: 1;
+
+  transform: translateY(-50%) scale(1);
 }
 
 .checkbox__text {
@@ -35,9 +43,12 @@
     top: 50%;
     left: 0;
 
+    background-color: $fifth-color-3;
+
     transform: translateY(-50%);
 
-    background-color: $fifth-color-3;
+    transition-property: background-color;
+    transition: 0.2s ease all;
   }
 }
 
@@ -47,9 +58,11 @@
   visibility: hidden;
   opacity: 0;
 
-  top: 13px;
+  top: 50%;
   left: 5px;
 
+  transform: translateY(-50%) scale(0);
+
   transition-property: opacity;
-  transition: 0.1s ease all;
+  transition: 0.2s ease all;
 }
