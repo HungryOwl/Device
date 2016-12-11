@@ -1,4 +1,4 @@
-.filter-form {
+.filter-form__wrapper {
   padding-top: 69px;
   padding-right: 68px;
 }
@@ -108,6 +108,7 @@
 
   border: none;
   color: $primary-color-20;
+  background-color: transparent;
 }
 
 .filter-form__group {

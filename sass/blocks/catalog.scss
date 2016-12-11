@@ -5,3 +5,56 @@
 
   padding-left: 72px;
 }
+
+.catalog__sort {
+  font-size: 0;
+  line-height: 0;
+
+  position: relative;
+
+  padding-top: 25px;
+  padding-bottom: 26px;
+  padding-right: 68px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: -72px;
+    right: 0;
+
+    margin-right: calc(50% - 50vw);
+
+    background-color: $primary-color-8;
+  }
+}
+
+.catalog__sort > *:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.catalog__sort > *:last-child,
+.catalog__sort > .catalog__name:first-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.catalog__name {
+  display: inline-block;
+
+  font-family: "Gilroy";
+  font-weight: bold;
+
+  font-size: 16px;
+  line-height: 19px;
+
+  letter-spacing: $letter-space;
+  text-transform: uppercase;
+}
+
+.catalog__sort-item {
+  display: inline-block;
+}

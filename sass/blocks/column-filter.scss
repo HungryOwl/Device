@@ -74,3 +74,8 @@
     background-color: $fifth-color-6;
   }
 }
+
+.column-filter__form-wrapper {
+  position: relative;
+  z-index: 10;
+}
