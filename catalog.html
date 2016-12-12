@@ -189,10 +189,18 @@
         <section class="catalog">
           <section class="catalog__sort">
             <h3 class="catalog__name">Сортировка:</h3>
-            <a class="catalog__sort-item" href="#">По цене</a>
-            <a class="catalog__sort-item" href="#">По типу</a>
-            <a class="catalog__sort-item" href="#">По популярности</a>
-          </section>
+
+            <div class="catalog__options-wrapper">
+              <a href="#" class="catalog__sort-item catalog__sort-item--active">По цене</a>
+              <a href="#" class="catalog__sort-item">По типу</a>
+              <a href="#" class="catalog__sort-item">По популярности</a>
+            </div>
+
+            <div class="catalog__arrows-wrapper">
+              <a href="#" class="catalog__arrow-up ">По возрастанию</a>
+              <a href="#" class="catalog__arrow-down catalog__arrow-down--active">По убыванию</a>
+            </div>
+         </section>
 
           <article class="catalog__item product">
             <a class="product__link" href="#">
