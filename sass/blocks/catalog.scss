@@ -14,6 +14,8 @@
 
   position: relative;
 
+  margin-bottom: 19px;
+
   padding-top: 25px;
   padding-bottom: 26px;
 
@@ -45,9 +47,9 @@
   letter-spacing: $letter-space;
   text-transform: uppercase;
 
-  margin-right: 38px;
-
   width: 180px;
+
+  margin-right: 5px;
 }
 
 .catalog__name:first-of-type {
@@ -118,7 +120,6 @@
 
   cursor: pointer;
 
-
   transition-property: border-color;
   transition: 0.2s ease all;
 }
@@ -145,4 +146,11 @@
 
 .catalog__arrow-down:hover {
   border-top-color: $primary-color-60;
+}
+
+.catalog__item-wrapper {
+  font-size: 0;
+  line-height: 0;
+
+  padding-bottom: 20px;
 }

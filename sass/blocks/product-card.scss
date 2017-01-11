@@ -1,0 +1,74 @@
+.product-card {
+  display: inline-block;
+  vertical-align: top;
+
+  font-size: $font-size;
+  line-height: $line-height;
+
+  width: 360px;
+
+  margin-top: 50px;
+}
+
+.product-card__link {
+  font-size: 0;
+  line-height: 0;
+
+  text-decoration: none;
+}
+
+.product-card:nth-child(2n-1) {
+  margin-right: 40px;
+}
+
+.product-card__img {
+  display: block;
+
+  width: 360px;
+  height: 380px;
+}
+
+.product-card__wrapper {
+  @include clearfix;
+
+  padding-top: 34px;
+}
+
+.product-card__title-link {
+  display: block;
+  float: left;
+
+  width: 260px;
+
+  text-decoration: none;
+}
+
+.product-card__title {
+  font-family: "Gilroy";
+  font-weight: bold;
+
+  font-size: 18px;
+  line-height: 21px;
+
+  color: $primary-color;
+
+  margin: 0;
+  padding: 0;
+}
+
+.product-card__price {
+  display: block;
+  float: right;
+
+  font-family: "Gilroy";
+  font-weight: lighter;
+
+  font-size: 16px;
+  line-height: 19px;
+
+  width: 100px;
+
+  margin-top: 1px;
+
+  text-align: right;
+}

@@ -106,8 +106,8 @@
                 </div>
 
                 <div class="filter-form__price-controls">
-                  <label class="filter-form__label filter-form__price--min">от <input class="filter-form__field filter-form__field--min" name="min-price" id="min-price" type="number" value="0" min="0" max="50000" step="50"></label>
-                  <label class="filter-form__label filter-form__price--max">до <input class="filter-form__field filter-form__field--max" name="max-price" id="max-price" type="number" value="5000" min="0" max="50000" step="50"></label>
+                  <label class="filter-form__label filter-form__label--min">от <input class="filter-form__field filter-form__field--min" name="min-price" id="min-price" type="number" value="0" min="0" max="50000" step="50"></label>
+                  <label class="filter-form__label filter-form__label--max">до <input class="filter-form__field filter-form__field--max" name="max-price" id="max-price" type="number" value="5000" min="0" max="50000" step="50"></label>
                 </div>
               </div>
 
@@ -200,51 +200,76 @@
               <a href="#" class="catalog__arrow-up ">По возрастанию</a>
               <a href="#" class="catalog__arrow-down catalog__arrow-down--active">По убыванию</a>
             </div>
-         </section>
+          </section>
 
-          <article class="catalog__item product">
-            <a class="product__link" href="#">
-              <img class="product__img" src="#" alt="Любительская селфи-палка">
-              <h4 class="product__title">Любительская селфи-палка</h4>
-            </a>
+          <div class="catalog__item-wrapper">
+            <article class="catalog__item product-card">
+              <a class="product-card__link" href="#">
+                <img class="product-card__img" src="img/item-1.jpg" alt="Любительская селфи-палка">
+              </a>
 
-            <span class="product__price">500&nbsp;руб.</span>
-          </article>
+              <div class="product-card__wrapper">
+                <a href="#" class="product-card__title-link">
+                  <h4 class="product-card__title">Любительская селфи-палка</h4>
+                </a>
+                <span class="product-card__price">500&nbsp;руб.</span>
+              </div>
+            </article>
 
-          <article class="catalog__item product">
-            <a class="product__link" href="#">
-              <img class="product__img" src="#" alt="Профессиональная селфи-палка">
-              <h4 class="product__title">Профессиональная селфи-палка</h4>
-            </a>
+            <article class="catalog__item product-card">
+              <a class="product-card__link" href="#">
+                <img class="product-card__img" src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+              </a>
 
-            <span class="product__price">1500&nbsp;руб.</span>
-          </article>
+              <div class="product-card__wrapper">
+                <a href="#" class="product-card__title-link">
+                  <h4 class="product-card__title">Профессиональная <br>селфи-палка</h4>
+                </a>
+                <span class="product-card__price">1 500&nbsp;руб.</span>
+              </div>
+            </article>
 
-          <article class="catalog__item product">
-            <a class="product__link" href="#">
-              <img class="product__img" src="#" alt="Непотопляемая селфи-палка">
-              <h4 class="product__title">Непотопляемая селфи-палка</h4>
-            </a>
+            <article class="catalog__item product-card">
+              <a class="product-card__link" href="#">
+                <img class="product-card__img" src="img/item-3.jpg" alt="Непотопляемая селфи-палка">
+              </a>
 
-            <span class="product__price">2500&nbsp;руб.</span>
-          </article>
+              <div class="product-card__wrapper">
+                <a href="#" class="product-card__title-link">
+                  <h4 class="product-card__title">Непотопляемая селфи-палка</h4>
+                </a>
+                <span class="product-card__price">2 500&nbsp;руб.</span>
+              </div>
+            </article>
 
-          <article class="catalog__item product">
-            <a class="product__link" href="#">
-              <img class="product__img" src="#" alt="Селфи-палка Следуй за мной">
-              <h4 class="product__title">Селфи-палка "Следуй за мной"</h4>
-            </a>
+            <article class="catalog__item product-card">
+              <a class="product-card__link" href="#">
+                <img class="product-card__img" src="img/item-4.jpg" alt="Селфи-палка Следуй за мной">
+              </a>
 
-            <span class="product__price">4900&nbsp;руб.</span>
-          </article>
+              <div class="product-card__wrapper">
+                <a href="#" class="product-card__title-link">
+                  <h4 class="product-card__title">Селфи-палка «Следуй&nbsp;за&nbsp;мной»</h4>
+                </a>
+                <span class="product-card__price">4 900&nbsp;руб.</span>
+              </div>
+            </article>
+          </div>
 
           <section class="pagination">
-            <a class="pagination__item pagination__item--backward" href="#">Назад</a>
-            <a class="pagination__item pagination__item--active" href="#">1</a>
-            <a class="pagination__item" href="#">2</a>
-            <a class="pagination__item" href="#">3</a>
-            <a class="pagination__item pagination__item--forward" href="#">Вперед</a>
+            <div class="pagination__wrapper">
+              <a class="pagination__item pagination__item--backward" href="#">Назад</a>
+
+              <div class="pagination__item-wrapper">
+                <a class="pagination__item pagination__item--active" href="#">1</a>
+                <a class="pagination__item" href="#">2</a>
+                <a class="pagination__item" href="#">3</a>
+              </div>
+
+              <a class="pagination__item pagination__item--forward" href="#">Вперед</a>
+            </div>
           </section>
+
         </section>
       </div>
     </main>

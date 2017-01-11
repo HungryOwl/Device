@@ -1,4 +1,6 @@
 .catalog-wrapper {
   @include container;
   @include clearfix;
+
+  position: relative;
 }

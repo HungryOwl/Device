@@ -2,6 +2,7 @@
   float: left;
 
   width: 268px;
+  min-height: 100%;
 
   padding-left: 60px;
 }
@@ -18,7 +19,7 @@
   &::before {
     content: "";
     position: absolute;
-    z-index: 0;
+    z-index: 1;
 
     left: 0;
     right: 0;
@@ -57,15 +58,13 @@
 }
 
 .column-filter__form {
-  position: relative;
-
   &::before {
     content: "";
     position: absolute;
     z-index: 0;
 
     left: 0;
-    right: 0;
+    right: 832px;
     top: 0;
     bottom: 0;
 
