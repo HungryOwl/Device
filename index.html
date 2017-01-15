@@ -345,5 +345,26 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-content">
+      <div class="modal-content__close">Закрыть</div>
+      <form class="message-form"  action="/echo" method="post">
+        <label class="message-form__text-label text" for="user-name">Ваше имя:
+          <input class="text__input" type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста" required>
+        </label>
+
+        <label class="message-form__email-label email" for="user-mail">Ваш e-mail:
+          <input class="email__input" type="email" name="user-mail" id="user-mail" placeholder="Для отправки ответа" required>
+        </label>
+
+        <label class="message-form__message textarea" for="user-message">Текст письма:
+          <textarea class="textarea__input" name="user-message" id="user-message" placeholder="В свободной форме" rows="5" required></textarea>
+        </label>
+
+        <span class="message-form__btn btn">
+          <input class="message-form__btn-content btn__content" type="submit" value="Отправить">
+        </span>
+      </form>
+    </div>
   </body>
 </html>

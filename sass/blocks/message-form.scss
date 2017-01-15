@@ -1,0 +1,27 @@
+.message-form__text-label {
+  display: block;
+  float: left;
+}
+
+.message-form__email-label {
+  display: block;
+  float: right;
+}
+
+.message-form__message {
+  display: block;
+  clear: both
+}
+
+.message-form__btn {
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.message-form__btn-content {
+  border: none;
+  background-color: transparent;
+
+  outline: none;
+  cursor: pointer;
+}

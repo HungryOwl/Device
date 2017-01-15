@@ -1,0 +1,32 @@
+.email {
+  font-family: "Gilroy";
+  font-weight: bold;
+
+  font-size: 18px;
+  line-height: 18px;
+
+  margin-bottom: 39px;
+}
+
+.email__input {
+  display: block;
+
+  font-family: "Open Sans";
+
+  font-size: 14px;
+  line-height: 18px;
+
+  width: 320px;
+
+  margin-top: 18px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: $fourth-color-f2;
+
+  border: none;
+  outline: none;
+}
