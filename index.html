@@ -12,7 +12,7 @@
       <a class="logo" href="#">Device</a>
 
       <form class="search-form" action="/echo" method="get">
-        <input class="search-form__search search" type="search" placeholder="Поиск по сайту" name="search" id="search-1" autofocus>
+        <input class="search-form__search search" type="search" placeholder="Поиск по сайту" name="search" id="search-1" >
         <input class="search-form__submit" type="submit" value="Найти" name="submit" id="find">
         <label class="search-form__decor search-form__decor--icon-search" for="search-1"></label>
       </form>
@@ -54,23 +54,23 @@
           <li class="main-nav__menu-item main-nav__menu-item--catalog-margin main-nav__menu-item--left-side"><a class="main-nav__menu-link main-nav__menu-link--catalog" href="./catalog.html">Каталог товаров</a>
             <ul class="main-nav__catalog">
               <li class="main-nav__catalog-item main-nav__catalog-item--first">
-                <a href="#" class="main-nav__catalog-link">Виртуальная реальность</a>
-                <a href="#" class="main-nav__catalog-link">Моноподы для селфи</a>
-                <a href="#" class="main-nav__catalog-link">Экшн-камеры</a>
+                <a href="./catalog.html" class="main-nav__catalog-link">Виртуальная реальность</a>
+                <a href="./catalog.html" class="main-nav__catalog-link">Моноподы для селфи</a>
+                <a href="./catalog.html" class="main-nav__catalog-link">Экшн-камеры</a>
               </li>
               <li class="main-nav__catalog-item">
-                <a href="#" class="main-nav__catalog-link">Фитнесс-браслеты</a>
-                <a href="#" class="main-nav__catalog-link">Умные часы</a>
+                <a href="./catalog.html" class="main-nav__catalog-link">Фитнесс-браслеты</a>
+                <a href="./catalog.html" class="main-nav__catalog-link">Умные часы</a>
               </li>
               <li class="main-nav__catalog-item">
-                <a href="#" class="main-nav__catalog-link">Квадрокоптеры</a>
+                <a href="./catalog.html" class="main-nav__catalog-link">Квадрокоптеры</a>
               </li>
               <li class="main-nav__catalog-item">
             </ul>
           </li>
-          <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link main-nav__menu-link--decor">Доставка</a></li>
-          <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Гарантия</a></li>
-          <li class="main-nav__menu-item main-nav__menu-item--right-side"><a href="#" class="main-nav__menu-link">Контакты</a></li>
+          <li class="main-nav__menu-item"><a href="#conditions-anchor" class="main-nav__menu-link main-nav__menu-link--decor">Доставка</a></li>
+          <li class="main-nav__menu-item"><a href="#conditions-anchor" class="main-nav__menu-link">Гарантия</a></li>
+          <li class="main-nav__menu-item main-nav__menu-item--right-side"><a href="#info-anckor" class="main-nav__menu-link">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -190,7 +190,7 @@
         </article>
       </div>
 
-      <section class="conditions">
+      <section class="conditions" id="conditions-anchor">
         <div class="conditions__wrapper">
           <input class="conditions__switcher" type="radio" name="condition" id="delivery" checked>
           <input class="conditions__switcher" type="radio" name="condition" id="warranty">
@@ -236,7 +236,7 @@
         <a href="#" class="suppliers__link suppliers__link--vive">Vive</a>
       </section>
 
-      <section class="device-info">
+      <section class="device-info" id="info-anckor">
         <section class="device-info__about-us">
           <h3 class="device-info__title">О нас</h3>
           <p class="device-info__content">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>

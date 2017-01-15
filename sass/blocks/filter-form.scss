@@ -49,14 +49,14 @@
 .filter-form__scale {
   height: 2px;
 
-  background-color: $fifth-color-3;
+  background-color: $fourth-color-db;
 }
 
 .filter-form__bar {
   width: 118px;
   height: 2px;
 
-  background-color: $seventh-color;
+  background-color: $fifth-color;
 }
 
 .filter-form__toggle {
@@ -71,13 +71,22 @@
   border: 2px solid $primary-color;
   border-radius: 50%;
 
-  background-color: $fifth-color-6;;
+  background-color: $fourth-color-ee;
 
   cursor: pointer;
 }
 
 .filter-form__toggle--max-toggle {
   left: 110px;
+}
+
+.filter-form__toggle--active {
+  width: 9px;
+  height: 9px;
+
+  border: 3px solid $third-color;
+  background-color: $fifth-color;
+  box-shadow: 0 4px 6px -2px $primary-color-73;
 }
 
 .filter-form__price-controls {

@@ -8,7 +8,7 @@
 
 .checkbox__input:checked ~ .checkbox__text {
   &::before {
-    background-color: $gray-4;
+    background-color: $fourth-color-c4;
   }
 }
 
@@ -43,7 +43,7 @@
     top: 50%;
     left: 0;
 
-    background-color: $fifth-color-3;
+    background-color: $fourth-color-db;
 
     transform: translateY(-50%);
 

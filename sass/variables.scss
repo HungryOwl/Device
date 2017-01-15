@@ -5,24 +5,24 @@ $black-30: rgba($black, 0.3);
 $black-8: rgba($black, 0.08);
 
 $white: #fff;
-$white-10: rgba($white, 0.1);
-$white-30: rgba($white, 0.3);
-$white-60: rgba($white, 0.6);
 $white-70: rgba($white, 0.7);
+$white-60: rgba($white, 0.6);
+$white-30: rgba($white, 0.3);
+$white-10: rgba($white, 0.1);
 
-$light-skin-1: #f7e296;
-$light-skin-2: #f7e184;
+$skin-light-296: #f7e296;
+$skin-light-184: #f7e184;
 
-$orange: #f0c52e;
-$orange-30: rgba($orange, 0.3);
+$skin-orange: #f0c52e;
+$skin-orange-30: rgba($skin-orange, 0.3);
 
-$gray: #e5e5e5;
-$dark-gray: #464646;
-$gray-2: #dcdcdc;
-$gray-3: #dbdbdb;
-$gray-4: #c4c4c4;
-$gray-5: #adadad;
-$gray-6: #eeeeee;
+$gray-46: #464646;
+$gray-e5: #e5e5e5;
+$gray-dc: #dcdcdc;
+$gray-db: #dbdbdb;
+$gray-c4: #c4c4c4;
+$gray-ad: #adadad;
+$gray-ee: #eeeeee;
 
 $green-bright: #91c92f;
 
@@ -31,6 +31,7 @@ $main-width: 1160px;
 
 // global
 $primary-color: $black;
+$primary-color-73: rgba($black, 0.73);
 $primary-color-60: rgba($black, 0.6);
 $primary-color-50: rgba($black, 0.5);
 $primary-color-30: rgba($black, 0.3);
@@ -38,8 +39,10 @@ $primary-color-20: rgba($black, 0.2);
 $primary-color-10: rgba($black, 0.1);
 $primary-color-8: rgba($black, 0.08);
 
-$secondary-color: $light-skin-1;
-$secondary-color-light: $light-skin-2;
+$secondary-color-296: $skin-light-296;
+$secondary-color-184: $skin-light-184;
+$secondary-color-bright: $skin-orange;
+$secondary-color-bright-30: $skin-orange-30;
 
 $third-color: $white;
 $third-color-70: $white-70;
@@ -47,17 +50,15 @@ $third-color-60: $white-60;
 $third-color-30: $white-30;
 $third-color-10: $white-10;
 
-$fourth-color: $orange;
-$fourth-color-30: $orange-30;
+$fourth-color-e5: $gray-e5;
+$fourth-color-dc: $gray-dc;
+$fourth-color-db: $gray-db;
+$fourth-color-ee: $gray-ee;
+$fourth-color-46: $gray-46;
+$fourth-color-c4: $gray-c4;
+$fourth-color-ad: $gray-ad;
 
-$fifth-color: $gray;
-$fifth-color-2: $gray-2;
-$fifth-color-3: $gray-3;
-$fifth-color-6: $gray-6;
-
-$sixth-color: $dark-gray;
-
-$seventh-color: $green-bright;
+$fifth-color: $green-bright;
 
 $bg-main: $white;
 
@@ -69,17 +70,20 @@ $letter-space: 3.5px;
 
 // text color
 $text-primary: $primary-color;
+$text-primary-73: $primary-color-73;
 $text-primary-60: $primary-color-60;
 $text-primary-50: $primary-color-50;
 $text-primary-30: $primary-color-30;
 $text-primary-20: $primary-color-20;
 $text-primary-10: $primary-color-10;
 
-$text-secondary: $secondary-color-light;
-$text-secondary-bright: $fourth-color;
-$text-secondary-bright-30: $orange-30;
+$text-secondary: $secondary-color-184;
+$text-secondary-bright: $secondary-color-bright;
+$text-secondary-bright-30: $secondary-color-bright-30;
 
 $text-third: $third-color;
-$text-third-30: $third-color-30;
-$text-third-60: $third-color-60;
 $text-third-70: $third-color-70;
+$text-third-60: $third-color-60;
+$text-third-30: $third-color-30;
+
+

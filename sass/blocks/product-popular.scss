@@ -38,14 +38,14 @@
     width: 160px;
     height: 160px;
 
-    background-color: $secondary-color;
+    background-color: $secondary-color-296;
 
     transition-property: background-color;
     transition: 0.2s ease all;
   }
 
   &:hover::before {
-    background-color: $fourth-color;
+    background-color: $secondary-color-bright;
   }
 
   &::after {

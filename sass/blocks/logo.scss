@@ -13,6 +13,14 @@
 
   transition-property: color;
   transition: 0.2s ease all;
+
+  &:hover {
+    color: $fourth-color-46;
+  }
+
+  &:active {
+    color: $text-primary-60;
+  }
 }
 
 .logo--footer {
