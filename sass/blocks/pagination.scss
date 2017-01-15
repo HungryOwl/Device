@@ -31,15 +31,28 @@
   text-decoration: none;
 
   transition-property: background-color;
-  transition: 0.2s ease all;
+  transition: 0.1s ease all;
 
   &:hover {
     background-color: $primary-color-8;
+  }
+
+  &:active {
+    color: $text-primary-30;
   }
 }
 
 .pagination__item--active {
   color: $text-primary;
+  cursor: default;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:active {
+    color: $text-primary;
+  }
 }
 
 .pagination__item--backward,
