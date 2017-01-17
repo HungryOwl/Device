@@ -246,7 +246,7 @@
             <li class="device-info__item"><a href="#" class="device-info__link">Автотрейдинг</a></li>
             <li class="device-info__item"><a href="#" class="device-info__link">ЖелДорЭкспедиция</a></li>
           </ul>
-          <a href="#" class="btn suppliers__btn">
+          <a href="#" class="suppliers__btn btn">
             <span class="btn__content suppliers__btn-content">Подробнее о нас</span>
           </a>
         </section>
@@ -254,8 +254,8 @@
         <section class="device-info__contacts">
           <h3 class="device-info__title">Контакты</h3>
           <p class="device-info__content">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <div class="map">Улица Строителей, дом 15</div>
-          <a href="#" class="btn suppliers__btn">
+          <a href="#" class="map" id="map">Улица Строителей, дом 15</a>
+          <a href="#" class="suppliers__btn suppliers__btn--contacts btn">
             <span class="btn__content suppliers__btn-content">Напишите нам</span>
           </a>
         </section>
@@ -302,9 +302,9 @@
           <p class="address address--footer">г. Москва, ул. Строителей, 15</p>
           <section class="main-nav main-nav--footer">
             <ul class="main-nav__items">
-              <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Доставка</a></li>
-              <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Гарантия</a></li>
-              <li class="main-nav__menu-item main-nav__menu-item--right-side"><a href="#" class="main-nav__menu-link">Контакты</a></li>
+              <li class="main-nav__menu-item"><a href="#conditions-anchor" class="main-nav__menu-link">Доставка</a></li>
+              <li class="main-nav__menu-item"><a href="#conditions-anchor" class="main-nav__menu-link">Гарантия</a></li>
+              <li class="main-nav__menu-item main-nav__menu-item--right-side"><a href="#" class="main-nav__menu-link main-nav__menu-link--contacts">Контакты</a></li>
             </ul>
           </section>
           <p class="phone phone--footer">Тел.: +7 (495) 495-95-95</p>
@@ -347,18 +347,18 @@
     </footer>
 
     <div class="modal-content">
-      <div class="modal-content__close">Закрыть</div>
+      <div class="modal-content__close btn-close">Закрыть</div>
       <form class="message-form"  action="/echo" method="post">
         <label class="message-form__text-label text" for="user-name">Ваше имя:
-          <input class="text__input" type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста" required>
+          <input class="text__input" type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста*" required>
         </label>
 
         <label class="message-form__email-label email" for="user-mail">Ваш e-mail:
-          <input class="email__input" type="email" name="user-mail" id="user-mail" placeholder="Для отправки ответа" required>
+          <input class="email__input" type="email" name="user-mail" id="user-mail" placeholder="Для отправки ответа*" required>
         </label>
 
         <label class="message-form__message textarea" for="user-message">Текст письма:
-          <textarea class="textarea__input" name="user-message" id="user-message" placeholder="В свободной форме" rows="5" required></textarea>
+          <textarea class="textarea__input" name="user-message" id="user-message" placeholder="В свободной форме*" rows="5" required></textarea>
         </label>
 
         <span class="message-form__btn btn">
@@ -366,5 +366,11 @@
         </span>
       </form>
     </div>
+    <div class="map-popup" id="big-map">Ул. Строителей, 15
+      <div class="map-popup__close btn-close">Закрыть</div>
+    </div>
+
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="./js/output.js"></script>
   </body>
 </html>

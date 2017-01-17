@@ -14,6 +14,7 @@ $skin-light-296: #f7e296;
 $skin-light-184: #f7e184;
 
 $skin-orange: #f0c52e;
+$skin-orange-50: rgba($skin-orange, 0.5);
 $skin-orange-30: rgba($skin-orange, 0.3);
 
 $gray-46: #464646;
@@ -43,6 +44,7 @@ $primary-color-8: rgba($black, 0.08);
 $secondary-color-296: $skin-light-296;
 $secondary-color-184: $skin-light-184;
 $secondary-color-bright: $skin-orange;
+$secondary-color-bright-50: $skin-orange-50;
 $secondary-color-bright-30: $skin-orange-30;
 
 $third-color: $white;

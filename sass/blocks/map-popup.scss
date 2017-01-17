@@ -1,36 +1,44 @@
-.modal-content {
+.map-popup {
   display: block;
-
-  visibility: hidden;
-  opacity: 0;
 
   position: fixed;
   z-index: 10000;
 
-  width: 760px;
+  visibility: hidden;
+  opacity: 0;
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  font-size: 0;
+  line-height: 0;
+
+  width: 960px;
+  height: 560px;
 
   top: 20%;
   left: 50%;
 
   margin-left: -480px;
 
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 99px;
-  padding-bottom: 78px;
-
-  background-color: $bg-main;
-
   box-shadow: 0 0 30px 0 rgba(0,0,0, 0.1),
               -30px 0 30px -15px rgba(0,0,0, 0.1),
               30px 0 30px -15px rgba(0,0,0, 0.1),
               0 25px 30px 0 rgba(0,0,0, 0.1);
 
+  background: url("../../img/map-big.jpg") $bg-main;
+
   transition-property: opacity;
   transition: 0.2s ease all;
 }
 
-.modal-content--active {
+.map-popup--active {
   visibility: visible;
   opacity: 1;
 }
+
+.map-popup__close {
+  z-index: 10001;
+  background-color: $secondary-color-bright-50;
+}
+
